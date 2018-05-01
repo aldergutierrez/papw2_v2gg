@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,800');
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+
+html,
+body {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+}
+/*navbar*/
+.navbar {
+  border-radius: 0px;
+  min-height: 75px;
+  margin-bottom: 0px;
+}
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+.navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar-nav>li>a{
+  padding-top: 25px;
+}
+.navbar-inverse .navbar-nav>li>a
+{
+  color: #000000;
+} 
+.navbar-form{
+  padding-top: 10px;
+}
+.navbar-inverse{
+  background-color: #e2e2e2;
+  border-color: #e2e2e2;
+}
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+  color: #337ab7;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+  color: #fff;
+  background-color: #337ab7;
+}
+.navbar-form .form-control {
+  background-color: #424242;
+}
+/*landing*/
+.jumbotron {
+  padding-top: 156px;
+  padding-bottom: 2px;
+  background-image: url(../img/ban.png);
+  background-size: 100% 100%;
+}
+/*signin*/
+.fondosesion{
+  height: 100%;
+  background-color: #424242;
+}
+.form-signin{
+  padding-top: 75px;
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: 55px;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin input[type="email"] {
+
+  margin-bottom: 10px;
+  border-radius: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10pt;
+  font-weight: 400 !important;
+  background-color: #d8d8d8;
+  padding-left: 25px;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-radius: 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10pt;
+  font-weight: 400 !important;
+  background-color: #d8d8d8;
+  padding-left: 25px;
+}
+#text1registro, #text2registro {
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.TxtHola {
+
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 19pt;
+  font-weight: 600 !important;
+  margin-top: 130px;
+  margin-bottom: 40px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+#btn-registro{
+  background-color: #a7ce9d;
+  margin: 10px 0px 0px 0px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10pt;
+  font-weight: 400 !important;
+  padding: 17px 16px;
+  margin-bottom: 10px;
+}
+/*--signup---*/
+.form-signup {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  padding-top: 75px;
+}
+.form-signup .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #CCCCCC;
+}
+.form-signup input[type="password"] {
+  margin-bottom: 0 px;
+}
+.form-signup .form-control:focus {
+  z-index: 2;
+}
+.form-signup .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: 55px;
+  padding: 10px;
+  font-size: 16px;
+}
+.CreateAccont .form-control
+{
+  background-color: #424242;
+ border:none;
+ box-shadow: none;
+ border-radius: 0px;
+ border-width: 2px;
+}
+.CreateAccont .form-group .input-group {
+  position: relative;
+  display: table;
+  border-collapse: separate;
+  border-style: solid;
+  border-color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-bottom: 20px;
+}
+.CreateAccont .input-group-addon{
+  border-left: 0;
+  background-color: #424242;
+  border: none;
+}
+
+.noteTitle{
+  text-align: center;
+}
+
+.interaction{
+  width: 100%;
+}
+
+.interaction .btn
+{
+  display: block;
+}
+
+
+.post{
+  background-color: #e2e2e2;
+  border-radius: 5px;
+  margin-bottom: 15px;
+ 
+}
