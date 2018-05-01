@@ -11,14 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get("/", function () {
+    return view("welcome");
 });
 
-Route::get('/prueba', function () {
-    return view('landing');
+Route::get("/prueba", function () {
+    return view("landing");
 });
 
-Route::get('/sesion', function (){
-	return view('login');
+Route::get("/sesion", function (){
+	return view("login");
 });
