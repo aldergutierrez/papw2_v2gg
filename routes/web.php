@@ -7,18 +7,18 @@
 |
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| contains the "web" middleware group. Now create something great!    c
 |
 */
 
-Route::get('/', function () {
+Route::get("/", function () {
     return view('welcome');
 });
 
-Route::get('/prueba', function () {
+Route::get("/prueba", function () {
     return view('landing');
 });
 
-Route::get('/sesion', function (){
+Route::get("/sesion", function (){
 	return view('login');
 });
