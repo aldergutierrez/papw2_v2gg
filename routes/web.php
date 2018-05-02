@@ -35,4 +35,7 @@ Route::get("/jobs", function (){
 	return view("jobs");
 });
 
+Route::get("/postear", function (){
+	return view("postear");
+});
 

@@ -22,12 +22,16 @@ class CreateBdUsersTable extends Migration
             $table->string('lastName', 50)->nullable();
             $table->string('email', 100)->unique();
             $table->string('country')->nullable();
+            $table->string('city')->nullable();
             $table->string('image')->nullable();
             $table->integer('followers')->default(0);
             $table->integer('follows')->default(0);
             $table->string('description')->nullable();
+            $table->string('birthday', 20)->nullable();
+            $table->datetime('creation');
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
