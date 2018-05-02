@@ -1,17 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,800');
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 
 html,
 body {
   height: 100%;
-  font-family: 'Raleway', sans-serif;
-  font-size: 15px;
-}
-/*navbar*/
-.navbar {
-  border-radius: 0px;
-  min-height: 75px;
-  margin-bottom: 0px;
 }
 .navbar .navbar-nav {
   display: inline-block;
@@ -21,44 +13,26 @@ body {
 .navbar .navbar-collapse {
   text-align: center;
 }
-.navbar-nav>li>a{
-  padding-top: 25px;
+
+iframe{
+  z-index: 2;
 }
-.navbar-inverse .navbar-nav>li>a
-{
-  color: #000000;
-} 
-.navbar-form{
-  padding-top: 10px;
+.TxtHola {
+
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 19pt;
+    font-weight: 600 !important;
+    margin-top: 130px;
+    margin-bottom: 40px;
+
 }
-.navbar-inverse{
-  background-color: #e2e2e2;
-  border-color: #e2e2e2;
+
+.btn-azul{
+background-color: #74A5B2;
 }
-.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-  color: #337ab7;
-}
-.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
-  color: #fff;
-  background-color: #337ab7;
-}
-.navbar-form .form-control {
-  background-color: #424242;
-}
-/*landing*/
-.jumbotron {
-  padding-top: 156px;
-  padding-bottom: 2px;
-  background-image: url(../img/ban.png);
-  background-size: 100% 100%;
-}
-/*signin*/
-.fondosesion{
-  height: 100%;
-  background-color: #424242;
-}
-.form-signin{
-  padding-top: 75px;
+
+.form-signin {
   width: 100%;
   max-width: 330px;
   padding: 15px;
@@ -70,119 +44,218 @@ body {
 .form-signin .form-control {
   position: relative;
   box-sizing: border-box;
-  height: 55px;
+  height: auto;
   padding: 10px;
   font-size: 16px;
 }
+.form-signin .form-control:focus {
+  z-index: 2;
+}
 .form-signin input[type="email"] {
-
-  margin-bottom: 10px;
-  border-radius: 0;
-  font-family: 'Raleway', sans-serif;
-  font-size: 10pt;
-  font-weight: 400 !important;
-  background-color: #d8d8d8;
-  padding-left: 25px;
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .form-signin input[type="password"] {
   margin-bottom: 10px;
-  border-radius: 0;
-  font-family: 'Raleway', sans-serif;
-  font-size: 10pt;
-  font-weight: 400 !important;
-  background-color: #d8d8d8;
-  padding-left: 25px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
-#text1registro, #text2registro {
-  color: #fff;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.TxtHola {
 
-  color: #ffffff;
-  font-family: 'Raleway', sans-serif;
-  font-size: 19pt;
-  font-weight: 600 !important;
-  margin-top: 130px;
-  margin-bottom: 40px;
-  margin-top: 100px;
-  margin-bottom: 40px;
+
+.navbar {
+    border-radius: 0px;
+    min-height: 75px;
+    margin-bottom: 0px;
+
 }
+
+.navbar-nav>li>a{
+  padding-top: 25px;
+
+}
+.navbar-inverse .navbar-nav>li>a
+{
+ color: #000000;
+} 
+
+#acomodo {
+    
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.navbar-form{
+  padding-top: 10px;
+}
+
+.navbar-inverse{
+      background-color: #e2e2e2;
+    border-color: #e2e2e2;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #337ab7;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #337ab7;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    }
+
+.jumbotron {
+    padding-top: 156px;
+    padding-bottom: 2px;
+    background-image: url(../img/ban.png);
+    background-size: 100% 100%;
+    color:#ffffff;
+}
+
+
+.fondosesion{
+    height: 100%;
+    background-color: #424242;
+}
+
+.form-signin{
+padding-top: 75px;
+}
+
 #btn-registro{
-  background-color: #a7ce9d;
-  margin: 10px 0px 0px 0px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 10pt;
-  font-weight: 400 !important;
-  padding: 17px 16px;
-  margin-bottom: 10px;
+        background-color: #a7ce9d;
+            margin: 10px 0px 0px 0px;
 }
-/*--signup---*/
-.form-signup {
-  width: 100%;
-  max-width: 330px;
-  padding: 15px;
-  margin: 0 auto;
-  padding-top: 75px;
+
+#text1registro, #text2registro {
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.form-signup .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 15px;
-  font-size: 14px;
-  background-color: #CCCCCC;
-}
-.form-signup input[type="password"] {
-  margin-bottom: 0 px;
-}
-.form-signup .form-control:focus {
-  z-index: 2;
-}
-.form-signup .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: 55px;
-  padding: 10px;
-  font-size: 16px;
-}
-.CreateAccont .form-control
+
+.jobss
 {
-  background-color: #424242;
- border:none;
- box-shadow: none;
- border-radius: 0px;
- border-width: 2px;
+  padding-left: 0px;
+  padding-right: 0px;
+
 }
-.CreateAccont .form-group .input-group {
-  position: relative;
-  display: table;
-  border-collapse: separate;
+
+.fulljobs.col-md-12
+{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.leftjobs
+{
   border-style: solid;
-  border-color: white;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  margin-bottom: 20px;
+  border-width: 5px;
 }
-.CreateAccont .input-group-addon{
-  border-left: 0;
-  background-color: #424242;
-  border: none;
-}
-
-.noteTitle{
-  text-align: center;
-}
-
-.interaction{
-  width: 100%;
-}
-
-.interaction .btn
+.findblock
 {
-  display: block;
+  height: 100%;
+  background-color: #424242;
+}
+
+.findlink
+{
+   color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    font-weight: 600 !important;
+
+      float: right;
+    padding-top: 14px;
+    padding-right: 50px;
+}
+
+.findlink2
+{
+   color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    font-weight: 600 !important;
+
+      float: left;
+    padding-top: 14px;
+    padding-left: 30px;
+}
+
+.jobs1
+{
+  height: 50px;
+  background-color: #CECECE;
+
+}
+
+.jobs2
+{
+  border: 1px, #000000;
+    padding-top: 21px;
+    margin-left: 20px;
+        margin-bottom: 50px;
+}
+
+.location{
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.location2{
+
+ margin-bottom: 5px;
+}
+.location3{
+
+ margin-bottom: 5px;
+ text-align: center;
+}
+
+.TxtHola2 {
+color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    font-weight: 300 !important;
+   display:table;
+margin:0 auto;
+    padding-top: 15px;
+
+}
+
+.TxtHola3 {
+color: #74A5B2;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15pt;
+    font-weight: 600 !important;
+   display:table;
+margin:0 auto;
+    padding-top: 15px;
+
+}
+
+.TxtHola4 {
+   color: gray;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    font-weight: 300 !important;
+   display:table;
+    margin:0 auto;
+    padding-top: 15px;
+
+}
+
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
 }
 
 
@@ -190,5 +263,57 @@ body {
   background-color: #e2e2e2;
   border-radius: 5px;
   margin-bottom: 15px;
+  margin: 5px 5px 30px 50px;
+  padding-top: 10px;
+    padding-bottom: 10px;
  
 }
+
+.noteTitle
+{
+  padding-left: 15px;
+    
+}
+
+
+.row + .noteSub
+{
+  padding-left: 15px;
+    padding-right: 15px
+}
+
+
+
+.post.col-md-3    
+{
+  width: 20%;
+}
+
+.card-img-top{
+  height: 160px;
+}
+
+.banner{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    font-weight: 800 !important;
+   display:table;
+    margin:0 auto;
+    padding-top: 15px;
+
+  text-align: center;
+}
+
+.subbanner
+{
+  font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+    font-weight: 800 !important;
+   display:table;
+    margin:0 auto;
+    padding-top: 15px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
