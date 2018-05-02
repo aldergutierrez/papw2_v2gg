@@ -22,3 +22,17 @@ Route::get("/prueba", function () {
 Route::get("/sesion", function (){
 	return view("login");
 });
+
+Route::get("/registrar", function (){
+	return view("registrar");
+});
+
+Route::get("/registrar2", function (){
+	return view("registrar2");
+});
+
+Route::get("/jobs", function (){
+	return view("jobs");
+});
+
+

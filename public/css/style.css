@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,800');
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 
 html,
@@ -28,7 +28,9 @@ iframe{
 
 }
 
-
+.btn-azul{
+background-color: #74A5B2;
+}
 
 .form-signin {
   width: 100%;
@@ -131,4 +133,126 @@ padding-top: 75px;
     color: #fff;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.jobss
+{
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
+.fulljobs.col-md-12
+{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.leftjobs
+{
+  border-style: solid;
+  border-width: 5px;
+}
+.findblock
+{
+  height: 100%;
+  background-color: #424242;
+}
+
+.findlink
+{
+   color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    font-weight: 600 !important;
+
+      float: right;
+    padding-top: 14px;
+    padding-right: 50px;
+}
+
+.findlink2
+{
+   color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    font-weight: 600 !important;
+
+      float: left;
+    padding-top: 14px;
+    padding-left: 30px;
+}
+
+.jobs1
+{
+  height: 50px;
+  background-color: #CECECE;
+
+}
+
+.jobs2
+{
+  border: 1px, #000000;
+    padding-top: 21px;
+    margin-left: 20px;
+        margin-bottom: 50px;
+}
+
+.location{
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.location2{
+
+ margin-bottom: 5px;
+}
+.location3{
+
+ margin-bottom: 5px;
+ text-align: center;
+}
+
+.TxtHola2 {
+color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    font-weight: 300 !important;
+   display:table;
+margin:0 auto;
+    padding-top: 15px;
+
+}
+
+.TxtHola3 {
+color: #74A5B2;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15pt;
+    font-weight: 600 !important;
+   display:table;
+margin:0 auto;
+    padding-top: 15px;
+
+}
+
+.TxtHola4 {
+   color: gray;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    font-weight: 300 !important;
+   display:table;
+    margin:0 auto;
+    padding-top: 15px;
+
+}
+
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
 }
