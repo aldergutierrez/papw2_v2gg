@@ -67,6 +67,7 @@
 
       </div><!-- /.container-fluid -->
     </nav>
+    
 
     <div class="fondosesion">
     <main id="registro1" role="main">
