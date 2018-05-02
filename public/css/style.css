@@ -111,7 +111,7 @@ body {
       padding-top: 156px;
     padding-bottom: 2px;
     background-image: url(../img/ban.png);
-    background-size: 100% 100%;
+    background-size: 100% 100%;color: #ffffff;
 }
 
 
@@ -256,3 +256,62 @@ hr {
     border-style: inset;
     border-width: 1px;
 }
+
+.post{
+  background-color: #e2e2e2;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  margin: 5px 5px 30px 50px;
+  padding-top: 10px;
+    padding-bottom: 10px;
+ 
+}
+
+.noteTitle
+{
+  padding-left: 15px;
+    
+}
+
+
+.row + .noteSub
+{
+  padding-left: 15px;
+    padding-right: 15px
+}
+
+
+
+.post.col-md-3    
+{
+  width: 20%;
+}
+
+.card-img-top{
+  height: 160px;
+}
+
+.banner{
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    font-weight: 800 !important;
+   display:table;
+    margin:0 auto;
+    padding-top: 15px;
+
+  text-align: center;
+}
+
+.subbanner
+{
+  font-family: 'Raleway', sans-serif;
+    font-size: 20pt;
+    font-weight: 800 !important;
+   display:table;
+    margin:0 auto;
+    padding-top: 15px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+

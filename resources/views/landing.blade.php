@@ -11,7 +11,7 @@
     <link href="css/boostrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/style_prueba.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
@@ -75,9 +75,8 @@
       <div class="jumbotron">
         <div class="container-fluid">
           
-          <h1 class="display-3">Showcase n Dev Videogames</h1>
-          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+          <h1 class="banner">Showcase n Dev Videogames</h1>
+          <span class="subbanner">GameDev Community</span>
         </div>
      
       </div>
@@ -86,89 +85,177 @@
         <!-- Example row of columns -->
         <div class="row">
           <div class="col-md-3 post">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
             <p class="noteTitle row">Donec id elit</p>
             <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
-            <div class="interaction input-group center-block row ">
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
          </div>
           </div>
-          <div class="col-md-3 post">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
             <p class="noteTitle row">Donec id elit</p>
             <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
-            <div class="interaction input-group center-block row ">
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-         </div>
-          </div>
-
-          <div class="col-md-3 post">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-            <p class="noteTitle row">Donec id elit</p>
-            <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
-            <div class="interaction input-group center-block row ">
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
          </div>
           </div>
 
-          <div class="col-md-3 post">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
             <p class="noteTitle row">Donec id elit</p>
             <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
-            <div class="interaction input-group center-block row ">
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
          </div>
           </div>
 
-          <div class="col-md-3 post">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
             <p class="noteTitle row">Donec id elit</p>
             <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
-            <div class="interaction input-group center-block row ">
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
          </div>
           </div>
 
-          <div class="col-md-3 post">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
             <p class="noteTitle row">Donec id elit</p>
             <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
-            <div class="interaction input-group center-block row ">
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
          </div>
           </div>
 
-          <div class="col-md-3 post">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
             <p class="noteTitle row">Donec id elit</p>
             <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
-            <div class="interaction input-group center-block row ">
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
          </div>
           </div>
 
-          <div class="col-md-3 post">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
             <p class="noteTitle row">Donec id elit</p>
             <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
-            <div class="interaction input-group center-block row ">
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
+         </div>
+          </div>
+
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <p class="noteTitle row">Donec id elit</p>
+            <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
+         </div>
+          </div>
+
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <p class="noteTitle row">Donec id elit</p>
+            <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
+         </div>
+          </div>
+
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <p class="noteTitle row">Donec id elit</p>
+            <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
+         </div>
+          </div>
+
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <p class="noteTitle row">Donec id elit</p>
+            <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
+         </div>
+          </div>
+
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <p class="noteTitle row">Donec id elit</p>
+            <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
+         </div>
+          </div>
+
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <p class="noteTitle row">Donec id elit</p>
+            <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
+         </div>
+          </div>
+
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <p class="noteTitle row">Donec id elit</p>
+            <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
+         </div>
+          </div>
+
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <p class="noteTitle row">Donec id elit</p>
+            <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
+         </div>
+          </div>
+
+            <div class="col-md-3 post">
+            <img class="card-img-top" data-src="holder.js/100px160?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
+            <p class="noteTitle row">Donec id elit</p>
+            <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">0 <span class="glyphicon glyphicon-align-left"></span></a>
          </div>
           </div>
         </div>
