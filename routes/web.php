@@ -39,3 +39,8 @@ Route::get("/postear", function (){
 	return view("postear");
 });
 
+Route::get("/profile", function (){
+	return view("profile");
+});
+
+

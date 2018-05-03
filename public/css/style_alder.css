@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800');
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 
 html,
@@ -157,4 +157,112 @@ padding-top: 75px;
   font-weight: 400 !important;
   padding: 17px 16px;
   margin-bottom: 10px;
+}
+
+/*------------------------
+.jumbotronProfile {
+    padding-top: 156px;
+    padding-bottom: 2px;
+    background-image: url(../img/image.jpg);
+    background-size: 100% 100%;
+
+}
+.jumbotronPro2{
+                  background: linear-gradient 
+                  (rgba(20, 20, 20, .5),
+                   rgba(20, 20, 20, .5)),  
+                  url("images/headerbg.jpg");
+}
+
+
+/* ==========================================================================
+   Wrap Sections
+   ========================================================================== */
+
+#headerwrap {
+  /*background: url(../img/image.jpg) no-repeat center top;*/
+  background: linear-gradient(
+                     rgba(20,20,20, .7), 
+                     rgba(20,20,20, .7)),
+                     url(../img/image.jpg);
+
+  background-color: black; 
+  margin-top: -10px;
+  padding-top:20px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 740px;
+  width: 100%;
+  
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+#headerwrap h2 {
+  margin-top: 10px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16pt;
+  font-weight: 700 !important;
+}
+
+#headerwrap h3 {
+  margin-top: 5px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14pt;
+  font-weight: 400 !important;
+}
+
+#headerwrap .followers h3 {
+  margin-top: -10px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14pt;
+  font-weight: 400 !important;
+  text-align:left;
+  margin-left: 370px;
+}
+
+#headerwrap h4 {
+  
+  margin-top: 5px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  font-weight: 400 !important;
+}
+
+#headerwrap .pictureProfile {
+  text-align: center;
+
+  
+  
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+    margin-top: 5px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14pt;
+    font-weight: 400 !important;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+hr.style1{
+  border-top: 1px solid #8c8b8b;
+  width: 400px;
 }
