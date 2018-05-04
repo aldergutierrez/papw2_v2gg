@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800');
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 html,
 body {
@@ -219,7 +220,7 @@ padding-top: 75px;
   margin-top: 5px;
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-size: 14pt;
+  font-size: 12pt;
   font-weight: 400 !important;
 }
 
@@ -227,7 +228,7 @@ padding-top: 75px;
   margin-top: -10px;
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-size: 14pt;
+  font-size: 12pt;
   font-weight: 400 !important;
   text-align:left;
   margin-left: 370px;
@@ -238,15 +239,12 @@ padding-top: 75px;
   margin-top: 5px;
   color: white;
   font-family: 'Raleway', sans-serif;
-  font-size: 12pt;
+  font-size: 11pt;
   font-weight: 400 !important;
 }
 
 #headerwrap .pictureProfile {
-  text-align: center;
-
-  
-  
+  text-align: center;  
 }
 
 .btn-outline {
@@ -256,13 +254,54 @@ padding-top: 75px;
     margin-top: 5px;
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size: 14pt;
+    font-size: 12pt;
     font-weight: 400 !important;
-    padding-right: 150px;
-    padding-left: 150px;
+    padding-right: 165px;
+    padding-left: 165px;
 }
 
 hr.style1{
-  border-top: 1px solid #8c8b8b;
+  border-top: 1px solid white;
   width: 400px;
+}
+
+.followers{
+margin-top:10px;
+text-align:center;
+color: white;
+font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  font-weight: 400 !important;
+}
+.numbers{
+margin:50px;
+color: white;
+}
+.content{
+display:inline-block;
+}
+.letters{
+display:block;
+}
+.text{
+margin-top:10px;
+text-align:center;
+color: white;
+font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  font-weight: 400 !important;
+  width: 400px;
+    margin: auto;
+    text-align: justify;
+}
+
+.fa,.iconSocial{
+  font-size:26px;
+  color: white;
+  margin-right: 30px;
+
+}
+
+.arrowdown {
+margin-top: 100px;
 }

@@ -194,21 +194,33 @@
               <a class="btn btn-default btn-outline">Follow</a>
               <br>
               <hr class="style1">
-              <br>
-
-              <div class="followers">
-                <h3>75</h3>
+                <div class="followers">
+                  <div class="content">
+                  <span class="numbers">75</span>
+                    <span class="letters">Posts</span>
+                    </div>
+                    <div class="content">
+                  <span class="numbers">980</span>
+                    <span class="letters">Followers</span>
+                    </div>
+                    <div class="content">
+                  <span class="numbers">403</span>
+                    <span class="letters">Following</span>
+                    </div>
+                </div>
+                <hr class="style1">
+                <div class="text">
+                Freelancer, illustrator, animator and Chipotle Lover.
+                </div>
+                <hr class="style1">
+                <div>
+                 <a href="#"><i class="fa iconSocial">&#xf082;</i></a>
+                 <a href="#"><i class="fa iconSocial">&#xf16d;</i></a>
+                 <a href="#"><i class="fa iconSocial">&#xf194;</i></a>
+                 <a href="#"><i class="fa iconSocial">&#xf099;</i></a>
+                </div>
               </div>
-              <br><!--
-              <div class="row">
-                <h1>MINIMAL THEME</h1>
-                <br>
-                <h3>Hello, I'm Carlos. I love design.</h3>
-                <br>
-                <br>
-                <div class="col-lg-6 col-lg-offset-3">
-                </div>-->
-              </div>
+              <a href="#"><img src="../img/downarrow.png" class="arrowdown" ></a>
             </div><!-- /container -->
           </div><!-- /headerwrap -->     
      
