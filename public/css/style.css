@@ -9,6 +9,10 @@ body {
   display: inline-block;
   float: none;
   vertical-align: top;
+      font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    font-weight: 800 !important;
+    color: #424242;
 }
 .navbar .navbar-collapse {
   text-align: center;
@@ -313,5 +317,25 @@ hr {
     padding-top: 15px;
   text-align: center;
   padding-bottom: 50px;
+}
+
+#btnSearch
+{
+  background-color: #424242;
+  border-radius: 10px;
+}
+
+#btnPostear{
+
+    width: 100px;
+    border-radius: 10px;
+    background-color: #74A5B2;
+    border-color: #74A5B2;
+}
+
+#profileNavbar
+{
+width: 36px;
+border-radius: 25px;
 }
 

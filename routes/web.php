@@ -15,7 +15,7 @@ Route::get("/", function () {
     return view("welcome");
 });
 
-Route::get("/prueba", function () {
+Route::get("/inicio", function () {
     return view("landing");
 });
 
@@ -42,5 +42,10 @@ Route::get("/postear", function (){
 Route::get("/profile", function (){
 	return view("profile");
 });
+
+Route::get("/navbar", function (){
+	return view("navbar");
+});
+
 
 
