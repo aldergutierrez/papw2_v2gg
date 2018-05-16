@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,300,400,600,700,800');
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 html,
 body {
@@ -55,6 +56,7 @@ background-color: #74A5B2;
 .form-signin .form-control:focus {
   z-index: 2;
 }
+
 .form-signin input[type="email"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
@@ -78,10 +80,7 @@ background-color: #74A5B2;
   padding-top: 25px;
 
 }
-.navbar-inverse .navbar-nav>li>a
-{
- color: #000000;
-} 
+
 
 #acomodo {
     
@@ -99,13 +98,15 @@ background-color: #74A5B2;
 }
 
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
-    color: #337ab7;
+    color: #74A5B2;
 }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     color: #fff;
-    background-color: #337ab7;
+    background-color: #74A5B2;
 }
-
+.navbar-inverse .navbar-nav>li>a{
+  color: #424242;
+}
 body {
     font-family: 'Raleway', sans-serif;
     font-size: 15px;
@@ -322,15 +323,21 @@ hr {
 #btnSearch
 {
   background-color: #424242;
-  border-radius: 10px;
+  border-radius: 6px;
+  margin-right: 10px;
 }
 
 #btnPostear{
 
-    width: 100px;
-    border-radius: 10px;
-    background-color: #74A5B2;
-    border-color: #74A5B2;
+  width: 120px;
+  border-radius: 6px;
+  background-color: #74A5B2;
+  border-color: #74A5B2;
+  margin-right: 10px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  font-weight: 800 !important;
 }
 
 #profileNavbar
@@ -338,4 +345,144 @@ hr {
 width: 36px;
 border-radius: 25px;
 }
+.modal-body div>.form-control{
+background-color: #E2E2E2;
+background-image: none;
+border: 1px solid #E2E2E2;
+color: #878787;
+}
 
+
+
+/*AAAAAAAAAALLLLLLLDDDDDEEEEERRRRRR*/
+
+
+#headerwrap {
+  /*background: url(../img/image.jpg) no-repeat center top;*/
+  background: linear-gradient(
+                     rgba(20,20,20, .7), 
+                     rgba(20,20,20, .7)),
+                     url(../img/image.jpg);
+
+  background-color: black; 
+  margin-top: -10px;
+  padding-top:20px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 740px;
+  width: 100%;
+  
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+#headerwrap h2 {
+  margin-top: 10px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16pt;
+  font-weight: 700 !important;
+}
+
+#headerwrap h3 {
+  margin-top: 5px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  font-weight: 400 !important;
+}
+
+#headerwrap .followers h3 {
+  margin-top: -10px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  font-weight: 400 !important;
+  text-align:left;
+  margin-left: 370px;
+}
+
+#headerwrap h4 {
+  
+  margin-top: 5px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 11pt;
+  font-weight: 400 !important;
+}
+
+#headerwrap .pictureProfile {
+  text-align: center;  
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+    margin-top: 5px;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 12pt;
+    font-weight: 400 !important;
+    padding-right: 165px;
+    padding-left: 165px;
+}
+
+hr.style1{
+  border-top: 1px solid white;
+  width: 400px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  border-width: 0.5px;
+}
+
+
+.followers{
+margin-top:10px;
+text-align:center;
+color: white;
+font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  font-weight: 400 !important;
+}
+.numbers{
+margin:50px;
+color: white;
+}
+.content{
+display:inline-block;
+}
+.letters{
+display:block;
+}
+.text{
+margin-top:10px;
+text-align:center;
+color: white;
+font-family: 'Raleway', sans-serif;
+  font-size: 12pt;
+  font-weight: 400 !important;
+  width: 400px;
+    margin: auto;
+    text-align: justify;
+}
+
+.fa,.iconSocial{
+  font-size:26px;
+  color: white;
+  margin-right: 30px;
+
+}
+
+.arrowdown {
+margin-top: 100px;
+}
