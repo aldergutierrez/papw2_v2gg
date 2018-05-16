@@ -15,12 +15,7 @@
   </head>
 
   <body>
-    <style type="text/css">
-      
-
-    </style>
-
-
+ @section('navbar')
    <nav class="navbar navbar-inverse">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -59,6 +54,7 @@
      </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+  @show
 
 
 <!-- Modal -->

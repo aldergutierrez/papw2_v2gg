@@ -47,6 +47,14 @@ Route::get("/navbar", function (){
 	return view("navbar");
 });
 
+Route::get("/app", function (){
+	return view("app");
+});
+
+
+Route::get("/child", function (){
+	return view("child");
+});
 
 
 
