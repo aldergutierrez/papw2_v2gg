@@ -1,0 +1,40 @@
+  {
+        Schema::create('post', function (Blueprint $table) {
+            $table->increments('idPost');
+            $table->string('title',20);
+            $table->string('description',500);
+            $table->string('image');
+            $table->string('creativeField',50);
+            $table->string('toolsUsed',100);
+            $table->string('fellasTag');
+            $table->datetime('creation');
+
+       
+            $table->foreign('idUsers')->references('idUsers')->on('users');;
+            $table->timestamps();
+        });
+    }
+
+    {
+        Schema::create('job', function (Blueprint $table) {
+            $table->increments('idJob');
+            $table->string('employment');
+            $table->string('description', 500);
+            $table->string('creativeField');
+            $table->string('hours');
+            $table->string('country');
+            $table->string('city');
+
+  
+            $table->foreign('idUsers')->references('idUsers')->on('users');
+
+            $table->timestamps();
+        });
+    }
+
+   {
+        Schema::create('comment', function (Blueprint $table) {
+            $table->increments('id');
+            $table->timestamps();
+        });
+    }
