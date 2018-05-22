@@ -22,6 +22,9 @@ class CreatePostsTable extends Migration
             $table->string('creativeField',50);
             $table->string('toolsUsed',100);
             $table->string('fellasTag');
+            $table->integer('likes');
+            $table->integer('comments');
+            $table->integer('views');
             $table->datetime('creation');
             $table->unsignedInteger('idUsers');
             $table->timestamps();
