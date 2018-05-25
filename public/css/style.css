@@ -486,3 +486,125 @@ font-family: 'Raleway', sans-serif;
 .arrowdown {
 margin-top: 100px;
 }
+
+ .post-image{
+       width:70%;
+         display: inline-block;
+
+    }
+    .comments{
+      
+    }
+    .post-image img{
+      width:100%;
+    }
+  .post-comment{
+    width: 25% !important;
+    display: inline-block;
+    position: absolute;
+    }
+    .post-comment img{
+          position: absolute;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 200px;
+    margin-top: -70px;
+}
+
+.btn-follow{
+    background: #3196ae;
+    color: white;
+    margin-left: 200px;
+    padding: 4px 10px !important;
+    margin-top: -30px;
+    font-size: 10px !important;
+}
+.btn-like{
+    background: #3196ae;
+    color: white;
+    margin-left: 10px;
+    padding: 4px 10px !important;
+    margin-top: 0px;
+    width: 100%;
+    font-size: 10px !important;
+    margin-bottom: 10px;
+}
+.likes{
+  list-style: none;
+}
+
+.likes li{
+  float: left;
+  margin: 5px;
+}
+  .border{
+    border: 1px solid black;
+    margin: 10px;
+    width: 100%;
+  }
+  .tool{
+    width: 100px;
+    border-radius: 0 !important;
+    position: relative !important;
+    margin-left: 10px !important;
+    margin-top: 0 !important;
+  }
+  .info{
+    list-style: none;
+    margin-left: -25px;
+  }
+  .date{
+        margin-left: 10px;
+    font-size: 12px;
+    color:darkgrey;
+  }
+  .txt-comment{
+    width: 100%;
+    margin-left: 10px;
+  height: 100px;
+}
+
+.comment{
+        margin-left: 60px;
+    margin-top: 5px;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+.modal-content{
+height: 650px;
+}
+.img-comment{
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 0px !important;
+  margin-left: 10px !important;
+  width: 40px !important;
+}
+.txt-name{
+display: inline-block;
+font-weight: bold;
+
+}
+.txt-comm{
+  /*display: inline-block;*/
+}
+.txt-date{
+  display: inline-block;
+  float: right;
+  font-size: 10px;
+  margin-top: 6px;
+}
+.post-title{
+  font-weight: bold;
+
+}
+.post-account{
+      font-size: 13px;
+    color: darkgrey;
+    font-weight: bold;
+}
+
+.post-category{
+      color: darkgray;
+      font-size: 13px;
+}

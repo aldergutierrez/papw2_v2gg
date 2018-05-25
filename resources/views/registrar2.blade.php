@@ -1,21 +1,8 @@
-@include('navbar')
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-    <title>Sign in - DEVREV</title>
+@extends('layouts.main')
+@section('title', 'RevDev - Registro')
 
     <!-- Bootstrap core CSS -->
-    <link href="css/boostrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-
-  <body>
+@section('content')
    
     <div class="fondosesion">
     <main id="registro1" role="main">
@@ -38,8 +25,4 @@
 
      </main>
      </div>
-          <script src="jquery/jquery-3.3.1.min.js"></script> 
-    <script src="js/holder.min.js"></script> 
-    <script src="css/boostrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-  </body>
-</html>
+@endsection

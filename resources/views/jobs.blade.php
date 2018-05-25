@@ -1,23 +1,8 @@
-@include('navbar')
-
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-
-    <title>Find a Job</title>
+@extends('layouts.main')
+@section('title', 'Revdev - Jobs')
 
     <!-- Bootstrap core CSS -->
-    <link href="css/boostrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-
-
-<body>
+@section('content')
  <div class="container-fluid jobss">
 <div class="fulljobs col-md-12" style="height: 50px;">
 <div class="findblock col-md-6">
@@ -109,9 +94,5 @@
  
  </div>
 </div>	
- <script src="jquery/jquery-3.3.1.min.js"></script> 
-    <script src="js/holder.min.js"></script> 
-    <script src="css/boostrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-  </body>
-  </html>
+@endsection
 

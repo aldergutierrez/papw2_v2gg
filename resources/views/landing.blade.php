@@ -1,150 +1,8 @@
-@include('navbar')
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>DevRev</title>
+@extends('layouts.main')
+@section('title', 'Revdev')
 
     <!-- Bootstrap core CSS -->
-    <link href="css/boostrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-    <style>
-    .post-image{
-       width:70%;
-         display: inline-block;
-
-    }
-    .comments{
-      
-    }
-    .post-image img{
-      width:100%;
-    }
-  .post-comment{
-    width: 25% !important;
-    display: inline-block;
-    position: absolute;
-    }
-    .post-comment img{
-          position: absolute;
-    width: 50px;
-    border-radius: 50%;
-    margin-left: 200px;
-    margin-top: -70px;
-}
-
-.btn-follow{
-    background: #3196ae;
-    color: white;
-    margin-left: 200px;
-    padding: 4px 10px !important;
-    margin-top: -30px;
-    font-size: 10px !important;
-}
-.btn-like{
-    background: #3196ae;
-    color: white;
-    margin-left: 10px;
-    padding: 4px 10px !important;
-    margin-top: 0px;
-    width: 100%;
-    font-size: 10px !important;
-    margin-bottom: 10px;
-}
-.likes{
-  list-style: none;
-}
-
-.likes li{
-  float: left;
-  margin: 5px;
-}
-  .border{
-    border: 1px solid black;
-    margin: 10px;
-    width: 100%;
-  }
-  .tool{
-    width: 100px;
-    border-radius: 0 !important;
-    position: relative !important;
-    margin-left: 10px !important;
-    margin-top: 0 !important;
-  }
-  .info{
-    list-style: none;
-    margin-left: -25px;
-  }
-  .date{
-        margin-left: 10px;
-    font-size: 12px;
-    color:darkgrey;
-  }
-  .txt-comment{
-    width: 100%;
-    margin-left: 10px;
-  height: 100px;
-}
-
-.comment{
-        margin-left: 60px;
-    margin-top: 5px;
-    font-size: 10px;
-    margin-bottom: 20px;
-}
-.modal-content{
-height: 650px;
-}
-.img-comment{
-  border-radius: 50%;
-  display: inline-block;
-  margin-top: 0px !important;
-  margin-left: 10px !important;
-  width: 40px !important;
-}
-.txt-name{
-display: inline-block;
-font-weight: bold;
-
-}
-.txt-comm{
-  /*display: inline-block;*/
-}
-.txt-date{
-  display: inline-block;
-  float: right;
-  font-size: 10px;
-  margin-top: 6px;
-}
-.post-title{
-  font-weight: bold;
-
-}
-.post-account{
-      font-size: 13px;
-    color: darkgrey;
-    font-weight: bold;
-}
-
-.post-category{
-      color: darkgray;
-      font-size: 13px;
-}
-</style>
-  </head>
-
-  <body>
-<div>                                                    
- 
-</div> 
-
-
+@section('content')
     <main role="main">
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
@@ -413,10 +271,6 @@ font-weight: bold;
       </div>
     </main>
 
-    <footer class="container">
-   
-    </footer>
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -426,14 +280,5 @@ font-weight: bold;
      <script src="jquery/jquery-3.3.1.min.js"></script> 
     <script src="js/holder.min.js"></script> 
     <script src="css/boostrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script>
-  $(document).ready(function(){
-      $("#post-id").click(function(){
-          $("#posts").modal();
-      });  
 
-  });
-</script>
-
-  </body>
-</html>
+@endsection

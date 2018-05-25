@@ -1,21 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-    <title>Sign in - DEVREV</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/boostrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-
-  <body>
- @section('navbar')
    <nav class="navbar navbar-inverse">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -54,7 +37,6 @@
      </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-  @show
 
 
 <!-- Modal -->
@@ -162,48 +144,5 @@
         </div>
       </div>
 
-  <script src="jquery/jquery-3.3.1.min.js"></script> 
-  <script src="js/holder.min.js"></script> 
-  <script src="css/boostrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
-    <script>
 
 
- $( document ).ready(function() {
-
-
-  $('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').focus()
-  });
-
-  $("#sss").hide();
-  
-  $("#btnSearch").click(function() {
-    if($("#sss").val().length == 0){
-
-    if ($("#sss").width() <= 0) {
-
-        $("#sss").fadeTo(100, 1).animate({
-          width: "160px"
-      }, "slow");
-
-    } 
-    else {
-      $("#sss").animate({
-          width: "0px"
-      }, "slow").fadeTo(100, 0);
-    }
-
-    }
-  });
-});
-
-
-
-
-
-
-</script>
-
-  </body>
-</html>

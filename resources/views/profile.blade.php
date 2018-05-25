@@ -1,28 +1,8 @@
-@include('navbar')
-<!DOCTYPE html>
-<html lang="en">
-<head>
- <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>DevRev</title>
+@extends('layouts.main')
+@section('title', 'RevDev - Registro')
 
     <!-- Bootstrap core CSS -->
-    <link href="css/boostrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-  </head>
-
-  <body>
-                                                    
-  <main id="main">
-  <main role="main">
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      
-        
-
+@section('content')
         <section id="home" name="home"></section>
           <div id="headerwrap">
             <div class="container">
@@ -64,7 +44,7 @@
                 </div>
               </div>
               <a href="#"><img src="../img/downarrow.png" class="arrowdown" ></a>
-            </div><!-- /container -->
+  
           </div><!-- /headerwrap -->     
      
 
@@ -123,29 +103,4 @@
 
       </div> <!-- /container -->
 
-
-      
-
-    </main>
-
-    <footer class="container">
-   
-    </footer>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
- <!--    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>-->
-    </div>
-     <script src="jquery/jquery-3.3.1.min.js"></script> 
-    <script src="js/holder.min.js"></script> 
-    <script src="css/boostrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-  </body>
-
-<script>
-  $(document).ready(function(){
-
-  });
-</script>
-</html>
+@endsection
