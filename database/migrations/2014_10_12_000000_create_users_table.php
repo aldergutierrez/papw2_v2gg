@@ -29,7 +29,6 @@ class CreateUsersTable extends Migration
             $table->integer('follows')->default(0);
             $table->string('description')->nullable();
             $table->string('birthday', 20)->nullable();
-            $table->datetime('creation');
             $table->rememberToken();
             $table->timestamps();
             $table->softDeletes();

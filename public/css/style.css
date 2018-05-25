@@ -28,7 +28,7 @@ iframe{
     font-family: 'Raleway', sans-serif;
     font-size: 19pt;
     font-weight: 600 !important;
-    margin-top: 130px;
+    margin-top: 95px;
     margin-bottom: 40px;
 
 }
@@ -121,12 +121,8 @@ body {
 
 
 .fondosesion{
-    height: 100%;
+   height: 89.7%;
     background-color: #424242;
-}
-
-.form-signin{
-padding-top: 75px;
 }
 
 #btn-registro{
@@ -136,7 +132,6 @@ padding-top: 75px;
 
 #text1registro, #text2registro {
     color: #fff;
-    padding-top: 20px;
     padding-bottom: 20px;
 }
 
