@@ -11,13 +11,8 @@
 |
 */
 
-Route::get("/", function () {
-    return view("welcome");
-});
+Route::get("/", "PagesController@landing");
 
-Route::get("/inicio", function () {
-    return view("landing");
-});
 
 Route::get("/sesion", function (){
 	return view("login");

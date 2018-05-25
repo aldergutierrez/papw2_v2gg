@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-         <a class="navbar-brand  " href="#">
+         <a class="navbar-brand  " href="{{ url('/') }}">
         <img  alt="DevRev" src="Brand/revdev_logo2.png" width="50px" >
       </a>
     </div>
@@ -19,9 +19,9 @@
         
         <ul class="nav navbar-nav">
            
-        <li><a href="#" >Discover</a></li>
-        <li><a href="#">Teams</a></li>
-        <li><a href="#">Jobs</a></li>
+        <li><a href="{{ url('/') }}" >Discover</a></li>
+        <li><a href="{{ url('/') }}">Teams</a></li>
+        <li><a href="{{ url('/jobs') }}">Jobs</a></li>
        
       </ul>
 
@@ -30,7 +30,8 @@
           <input type="text" id="sss" style=" width: 0px">
         <button class="btn btn-primary" id="btnSearch" type="button"><span class="glyphicon glyphicon-search" style="font-style: 50px;"></span></button>
          <button class="btn btn-primary" id="btnPostear" type="button" data-toggle="modal" data-target="#myModal">Post</button>
-        <img id="profileNavbar" src="../img/Pic1.jpg">
+        <a href="{{ url('/profile') }}"><img id="profileNavbar" src="../img/Pic1.jpg"></a>
+        
         </div>
         </form>
 
