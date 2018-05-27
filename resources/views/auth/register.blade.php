@@ -9,63 +9,66 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
-                        <div class="form-group row">
+                        <div class="form-group ">
                         
-                            <div class="col-md-6">
-                                <input id="userName" type="text" class="form-control{{ $errors->has('userName') ? ' is-invalid' : '' }}" name="userName" value="{{ old('userName') }}" required autofocus>
+                            
+                                <input id="userName" type="text" placeholder="User name" class="form-control{{ $errors->has('userName') ? ' is-invalid' : '' }}" name="userName" value="{{ old('userName') }}" required autofocus>
 
                                 @if ($errors->has('userName'))
                                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('userName') }}</strong>
                                     </span>
                                 @endif
-                            </div>
+                            
                         </div>
 
 
-                        <div class="form-group row">
+                        <div class="form-group ">
                         
-                            <div class="col-md-6">
-                                <input id="inputEmail"  type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                            
+                                <input id="inputEmail"  type="email" placeholder="Email address" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
 
                                 @if ($errors->has('email'))
                                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
-                            </div>
+                            
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group ">
                         
 
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                            
+                                <input id="password" type="password" placeholder="Password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
                                 @if ($errors->has('password'))
                                     <span class="invalid-feedback">
                                         <strong>{{ $errors->first('password') }}</strong>
                                     </span>
                                 @endif
-                            </div>
+                            
                         </div>
 
-                        <div class="form-group row">
+                        <div class="form-group">
                            
 
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
-                            </div>
+                            
+                                <input id="password-confirm" type="password" placeholder="Confirm password" class="form-control" name="password_confirmation" required>
+                            
                         </div>
 
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                        <div class="form-group mb-0">
+                            
+                                <button type="submit" id="btn-registro" class="btn btn-lg btn-primary btn-block">
                                     {{ __('Register') }}
                                 </button>
-                            </div>
+                            
                         </div>
-        <p class="mt-5 mb-3 text-muted"> Already have an account?</p>
+                        <div class="form-group">
+                                  <p class="mt-5 mb-3 text-muted"> Already have an account?</p>
+                        </div>
+    </form>
     </form>
      </main>
      </div>
