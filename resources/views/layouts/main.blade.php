@@ -6,13 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="css/boostrap/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+      <link href="css/jquery.Jcrop.min.css" rel="stylesheet">
+        <link href="css/custominputfile.min.css" rel="stylesheet">
+    
+    
     </head>
     <body>
  @include('navbar')
 @yield('content')
   <script src="jquery/jquery-3.3.1.min.js"></script> 
+<script src="js/custominputfile.min.js"></script> 
+<script src="js/jquery.Jcrop.min.js"></script> 
   <script src="js/holder.min.js"></script> 
   <script src="css/boostrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+  
     </body>
 </html>
 
@@ -21,6 +29,7 @@
 
 
   $('#myModal').on('shown.bs.modal', function () {
+$('#input-file-1').customFile();
     $('#myInput').focus()
   });
 
@@ -53,6 +62,7 @@
   $(document).ready(function(){
       $("#post-id").click(function(){
           $("#posts").modal();
+                
       });  
 
   });

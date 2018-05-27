@@ -53,7 +53,7 @@
               </div>
 
               <div class="form-group"> 
-              <input  type="text" class="form-control " style="height: 280px; padding-left: 380px;" placeholder="Images, Gif, ZIP">
+              <input type="file" name="input-file-1" id="input-file-1" style="width: 600px;">
               </div>
 
               <div class="form-group">
