@@ -21,19 +21,52 @@
            
         <li><a href="{{ url('/') }}" >Discover</a></li>
         <li><a href="{{ url('/') }}">Teams</a></li>
-        <li><a href="{{ url('/jobs') }}">Jobs</a></li>
-       
+        <li><a href="{{ url('/jobs') }}">Jobs</a></li>  
       </ul>
 
  <form class="navbar-form navbar-right " role="search">
         <div class="form-group">
           <input type="text" id="sss" style=" width: 0px">
         <button class="btn btn-primary" id="btnSearch" type="button"><span class="glyphicon glyphicon-search" style="font-style: 50px;"></span></button>
-         <button class="btn btn-primary" id="btnPostear" type="button" data-toggle="modal" data-target="#myModal">Post</button>
-        <a href="{{ url('/profile') }}"><img id="profileNavbar" src="../img/Pic1.jpg"></a>
+   </form>
+                @if (Route::has('login'))
+                    @auth
+                           <button class="btn btn-primary" id="btnPostear" type="button" data-toggle="modal" data-target="#myModal">Post</button>
+<div class="input-group">
+  <a href="{{ url('/profile') }}"><img id="profileNavbar" src="../img/Pic1.jpg"></a>
+    <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-chevron-down"></span></button>
+     <ul class="dropdown-menu">
+    <li> <li><a href="#" style="float:right;">{{ Auth::user()->userName }} </a></li>
+    <li><a href="#">Edit Profile</a></li>
+    <li>     <a class="dropdown-item" href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form></li>
+  </ul>
+    </div>
+
+</div>
+     
+            
+          
+                    @else
+                        <div class="form-group" id="login-registro">
+                        <a class="btn btn-default" href="{{ route('login') }}" style="background-color: #424242bd; color: #fff; "><span class=" glyphicon glyphicon-log-in" style="font-style: 50px;"></span> Login</a>
+                        <a class="btn btn-default" href="{{ route('register') }}" style="background-color: #65d35e; color: 
+                        #fff; "><span class=" glyphicon glyphicon-user" style="font-style: 50px;"></span> Register</a>
+                      </div>
+                    @endauth
+            @endif
+
+   
         
-        </div>
-        </form>
+    
+     
 
      </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->

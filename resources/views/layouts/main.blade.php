@@ -8,8 +8,7 @@
     <link href="css/style.css" rel="stylesheet">
       <link href="css/jquery.Jcrop.min.css" rel="stylesheet">
         <link href="css/custominputfile.min.css" rel="stylesheet">
-    
-    
+        <script src="css/boostrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     </head>
     <body>
  @include('navbar')
@@ -18,9 +17,6 @@
 <script src="js/custominputfile.min.js"></script> 
 <script src="js/jquery.Jcrop.min.js"></script> 
   <script src="js/holder.min.js"></script> 
-  <script src="css/boostrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
-  
     </body>
 </html>
 
