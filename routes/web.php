@@ -71,3 +71,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('/', 'createPostController@index')->name('landing');
+
+Route::get('/', 'createPostController@create')->name('landing');

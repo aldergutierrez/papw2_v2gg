@@ -15,4 +15,12 @@ class createPostController extends Controller
 
         return view('/landing')->with(['posts' => $posts]);
     }
+
+
+       public function create()
+    {
+    	
+	$posts = Posts::all();
+        return view('/landing')->with(['posts' => $posts]);
+    }
 }
