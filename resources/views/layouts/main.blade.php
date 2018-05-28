@@ -16,10 +16,9 @@
   <script src="jquery/jquery-3.3.1.min.js"></script> 
 <script src="js/custominputfile.min.js"></script> 
 <script src="js/jquery.Jcrop.min.js"></script> 
-  <script src="js/holder.min.js"></script> 
-    </body>
+<script src="js/holder.min.js"></script> 
+ </body>
 </html>
-
     <script>
  $( document ).ready(function() {
 
