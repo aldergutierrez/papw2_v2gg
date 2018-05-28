@@ -10,7 +10,7 @@ class Posts extends Model
 protected $table ='posts';
 
 	 protected $fillable = [
-        'titile', 'description', 'image','creativeField','toolsUsed','fellasTag','idUsers',
+        'titile', 'description', 'image','creativeField','toolsUsed','fellasTag','idUsers'
     ];
    
 }

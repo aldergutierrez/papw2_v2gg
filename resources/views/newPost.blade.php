@@ -4,9 +4,23 @@
             
             
             <div class="modal-body">
-             <form action="{{route('newPost')}}" method="POST">
 
-             {{crsf_field()}} 
+@if(count($errors) > 0)
+
+<div class="alert alert-danger">
+  <ul>
+    @foreach($errors->all() as $error)
+    <li> {{ $error }}</li>
+    @endforeach
+  </ul>
+</div>
+@endif
+
+
+
+             <form action="{{ route('newpost') }}" method="POST">
+
+             {{ csrf_field() }}
 
               <div class="form-group">
                 <input type="text" class="form-control" id="recipient-name" placeholder="Title">
@@ -31,6 +45,7 @@
               <div class="form-group">
               <input  type="text" class="form-control " placeholder="Category">
               </div>
+                </form>
               <!--
               <div class="form-group">
               <div class="dropdown">
@@ -99,8 +114,8 @@
                   
                 
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" type="submit" class="btn btn-primary">Post<span class="glyphicon glyphicon-chevron-right"></span></button>
-                </form>
+                <button type="button" class="btn btn-primary">Post<span class="glyphicon glyphicon-chevron-right"></span></button>
+              
             </div>
           </div>
         </div>

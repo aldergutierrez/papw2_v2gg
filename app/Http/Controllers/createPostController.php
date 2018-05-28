@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Posts;
-
+use App\Http\Requests;
 use Illuminate\Http\Request;
 
 class createPostController extends Controller
@@ -17,10 +17,20 @@ class createPostController extends Controller
     }
 
 
-       public function create()
+          public function store(Request $request)
     {
-    	
-	$posts = Posts::all();
-        return view('/landing')->with(['posts' => $posts]);
+
+    	$this->validate($request,['title' => 'required',
+    		'description' => 'required',
+'image' => 'required',
+'creativeField' => 'required',
+'fellasTag' => 'required',
+'toolsUsed' => 'required',
+'idUsers' => 'required'
+]);
+
+    	dd($request->all());
+
+
     }
 }
