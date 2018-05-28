@@ -6,19 +6,19 @@
  <div class="container-fluid jobss">
 <div class="fulljobs col-md-12" style="height: 50px;">
 <div class="findblock col-md-6">
-	<a href=""><span class="findlink TxtHola2">Find</span></a>
+	<a href=""><span class="findlink TxtHola6">Find</span></a>
 </div>
 <div class="findblock col-md-6">
-	<div><a href=""><span class="findlink2 TxtHola2">Post</span></a></div>
+	<div><a href=""><span class="findlink2 TxtHola6">Post</span></a></div>
 </div>
 </div>
 
  <div class="leftjobs col-md-5">
  	<div class="jobs1 row">
- 		<span class="TxtHola2">Filter jobs by:</span>
+ 		<span class="TxtHola5">FILTER JOBS BY:</span>
  </div>
 <div class="jobs2 row">
-	<span class="location">LOCATION</span>
+	<span class="location TxtHola2">LOCATION</span>
 	<form>
 	 <div class="form-group">
 <div class="col-md-10 selectContainer">
@@ -32,14 +32,14 @@
             <input type="text" class="form-control location2 " name="lastName" placeholder="Last name" />
         </div>
          </form>
-        <div class="location3 col-md-12"> <button type="button" class=" btn btn-azul">Primary</button></div>	
+        <div class="location3 col-md-12"> <button type="button" class=" btn btn-azul">Apply</button></div>	
        
     </div>
       </div>
 
  <!--mitad-->
 <div class=" jobs2 row">
- 	<span class="location">CREATIVE FIELD</span>
+ 	<span class="location TxtHola2">CREATIVE FIELD</span>
  	<form>
  		 <div class="form-group">
 <div class="col-md-10 selectContainer">
