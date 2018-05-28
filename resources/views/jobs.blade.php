@@ -56,43 +56,42 @@
    </div>
  	</div>
  </div>
+<div class="col-md-7">
+ <div class="col-md-12"><hr class="style2"></div>
+</div>
  <div class="col-md-7">
- 	<div class="row col-md-6 TxtHola4">
- 		Hola
- </div>
-		<div class="col-md-6 TxtHola4">
- 		amigos
-</div>
-	<div class="row col-md-6 TxtHola3">
- 		<a href=""><span>COMO</span></a>
- </div>
-		<div class="col-md-6 TxtHola4">
- 		estais
-</div>
-<div class="col-md-12"><hr></div>
-
-
- 
+     <div class="row col-md-10 TxtHola4">
+     		Hola
+     </div>
+    		<div class="col-md-2 TxtHola4">
+     		amigos
+    </div>
+    	<div class="row col-md-10">
+     		<a href="" class="TxtHola3"><span>Senior Developer C++</span></a>
+     </div>
+    		<div class="col-md-2 TxtHola4">
+     		estais
+    </div>
+<div class="col-md-12"><hr class="style2"></div>
  </div>
 
- <div class="col-md-7">
- 	<div class="row col-md-6 TxtHola4">
- 		Hola
- </div>
-		<div class="col-md-6 TxtHola4">
- 		amigos
-</div>
-	<div class="row col-md-6 TxtHola3">
- 		<a href=""><span>COMO</span></a>
- </div>
-		<div class="col-md-6 TxtHola4">
- 		estais
-</div>
-<div class="col-md-12"><hr></div>
+<div class="col-md-7">
+     	<div class="row col-md-10 TxtHola4">
+     		Hola
+     </div>
+    		<div class="col-md-2 TxtHola4">
+     		amigos
+    </div>
+    	<div class="row col-md-10 ">
+     		<a href="" class="TxtHola3"><span>Concept Artist 2D</span></a>
+     </div>
+    		<div class="col-md-2 TxtHola4">
+     		estais
+    </div>
+    <div class="col-md-12"><hr class="style2"></div>
 
 
- 
  </div>
-</div>	
+	
 @endsection
 
