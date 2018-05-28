@@ -453,7 +453,7 @@ color: #878787;
 
 
   background-color: #424242; 
-  margin-top: -10px;
+
   padding-top:20px;
   text-align:center;
   background-attachment: relative;
@@ -505,6 +505,18 @@ color: #878787;
   font-size: 16px;
   height: 45px;
   color: #9c9c9c;
+}
+
+#editSection #btn-registro{
+   width: 100%;
+  max-width: 380px;
+  margin-top: 20px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+    font-size: 16px;
+    height: auto;
 }
 
 .btn-outline {

@@ -33,6 +33,7 @@
 
              <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Description">
 
+             <button id="btn-registro" class="btn btn-lg btn-primary btn-block" type="submit">Aceptar</button>
           </div><!-- /headerwrap -->    
           </div>
 
