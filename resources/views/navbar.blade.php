@@ -1,9 +1,10 @@
 
+   
    <nav class="navbar navbar-inverse">
-      <div class="container">
+    <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -12,9 +13,7 @@
          <a class="navbar-brand  " href="{{ url('/') }}">
         <img  alt="DevRev" src="Brand/revdev_logo2.png" width="50px" >
       </a>
-    </div>
-    <div class="col-md-2">
-    </div>
+   </div>
     <div class="collapse navbar-collapse" id="navbar-1"> 
         
         <ul class="nav navbar-nav">
@@ -29,14 +28,17 @@
           <input type="text" id="sss" style=" width: 0px">
         <button class="btn btn-primary" id="btnSearch" type="button"><span class="glyphicon glyphicon-search" style="font-style: 50px;"></span></button>
    </form>
+
                 @if (Route::has('login'))
                     @auth
                            <button class="btn btn-primary" id="btnPostear" type="button" data-toggle="modal" data-target="#myModal">Post</button>
 <div class="input-group">
+
   <a href="{{ url('/profile') }}"><img id="profileNavbar" src="../img/Pic1.jpg"></a>
+  <div class="dropdown" style="display: inline-block;">
     <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-chevron-down"></span></button>
      <ul class="dropdown-menu">
-    <li> <li><a href="#" style="float:right;">{{ Auth::user()->userName }} </a></li>
+    <li> <a href="#" style="float:right;">{{ Auth::user()->userName }} </a></li>
     <li><a href="#">Edit Profile</a></li>
     <li>     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -50,31 +52,27 @@
   </ul>
     </div>
 
-</div>
-     
-            
-          
                     @else
-                        <div class="form-group" id="login-registro">
+                        <div class="form-group" id="login-registro" style="display: inline-block;">
                         <a class="btn btn-default" href="{{ route('login') }}" style="background-color: #424242bd; color: #fff; "><span class=" glyphicon glyphicon-log-in" style="font-style: 50px;"></span> Login</a>
                         <a class="btn btn-default" href="{{ route('register') }}" style="background-color: #65d35e; color: 
                         #fff; "><span class=" glyphicon glyphicon-user" style="font-style: 50px;"></span> Register</a>
                       </div>
                     @endauth
             @endif
-
+</div>
    
         
     
      
 
      </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
+</div>
     </nav>
 
 
 <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal fade" id="Mpostear" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             
@@ -178,75 +176,7 @@
         </div>
       </div>
 
- <div class="modal fade" id="posts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <!--<div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title" id="myModalLabel">Title</h4>
-            </div>   -->
-            <div class="modal-body">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body">
-            <div>
-              <div class="post-image" >
-              <img src="../img/image.jpg">
-              </div>
-              <div class="post-comment">
-                <ul class="info">
-                  <li class="post-title">EYE CONTACT</li>
-                  <li class="post-account">aldergutierrez</li>
-                  <li class="post-category">Category 1</li>
-                </ul>
-                <img src="../img/Pic1.jpg">
-                <div class="btn-follow btn">Follow</div>
-                <ul class="likes">
-                  <li><span class="glyphicon glyphicon-heart"></span></li>
-                  <li>22</li>
-                  <li><span class="glyphicon glyphicon-heart"></span></li>
-                  <li>100</li>
-                  <li><span class="glyphicon glyphicon-heart"></span></li>
-                  <li>40</li>
-                </ul>
-              <div class="date">Published: 05/05/2018</div>
-              <div class="border"></div>
-              <img class="tool" src="../img/Pic1.jpg">
-              <div class="border"></div>
-              <div class="btn btn-like">Like project</div>
-              <div class="date">Comments(20)</div>
-              <textarea class="txt-comment"></textarea>
-              <div class="btn btn-like">Post comment</div>
-              <div class="comments">
-              <img class="img-comment" src="../img/Pic1.jpg">
-              <div class="txt-date">12:34am</div>
-              <div class="comment">
-                <div class="txt-name">Alder</div>
-                <div class="txt-comm">Buen trabajo!</div>
-                
-              </div>
-              <img class="img-comment" src="../img/Pic1.jpg">
-              <div class="txt-date">12:34am</div>
-              <div class="comment">
-                <div class="txt-name">Alder</div>
-                <div class="txt-comm">Buen trabajo!</div>
-  
-              </div>
-              <img class="img-comment" src="../img/Pic1.jpg">
-              <div class="txt-date">12:34am</div>
-              <div class="comment">
-                <div class="txt-name">Alder</div>
-                <div class="txt-comm">Buen trabajo!</div>
- 
-              </div>
-              </div>
-              </div>
-            </div>
-                </div>
-              
-            </div>
-            </div>
-          </div>
+
 
 
 

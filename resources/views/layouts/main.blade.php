@@ -8,26 +8,24 @@
     <link href="css/style.css" rel="stylesheet">
       <link href="css/jquery.Jcrop.min.css" rel="stylesheet">
         <link href="css/custominputfile.min.css" rel="stylesheet">
-        <script src="css/boostrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+       
     </head>
     <body>
+
  @include('navbar')
 @yield('content')
-  <script src="jquery/jquery-3.3.1.min.js"></script> 
+
+
+<script src="jquery/jquery-3.3.1.min.js"></script> 
+<script src="css/boostrap/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 <script src="js/custominputfile.min.js"></script> 
 <script src="js/jquery.Jcrop.min.js"></script> 
 <script src="js/holder.min.js"></script> 
+
  </body>
 </html>
-    <script>
+ <script>
  $( document ).ready(function() {
-
-
-  $('#myModal').on('shown.bs.modal', function () {
-$('#input-file-1').customFile();
-    $('#myInput').focus()
-  });
-
   $("#sss").hide();
   
   $("#btnSearch").click(function() {
@@ -46,19 +44,28 @@ $('#input-file-1').customFile();
       }, "slow").fadeTo(100, 0);
     }
 
+
     }
   });
-});
+  });
+
+ 
+$( document ).ready(function() {
+  $("#post-id").click(function(){
+          $("#posts").modal();
+      });  
+ });
+
+$( document ).ready(function() {
+  $("#btnPostear").click(function(){
+          $("#Mpostear").modal();
+          $('#input-file-1').customFile();
+      });  
+ });
+
 
 </script>
+
+   
 
     
-    <script>
-  $(document).ready(function(){
-      $("#post-id").click(function(){
-          $("#posts").modal();
-                
-      });  
-
-  });
-</script>
