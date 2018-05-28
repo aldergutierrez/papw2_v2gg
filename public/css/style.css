@@ -15,6 +15,7 @@ body {
     font-weight: 800 !important;
     color: #424242;
 }
+
 .navbar .navbar-collapse {
   text-align: center;
 }
@@ -447,6 +448,65 @@ color: #878787;
   text-align: center;  
 }
 
+#editSection {
+  /*background: url(../img/image.jpg) no-repeat center top;*/
+
+
+  background-color: #424242; 
+  margin-top: -10px;
+  padding-top:20px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  
+  width: 100%;
+  
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+     height: 100%;
+    background-color: #424242;
+
+}
+
+#editSection .pictureProfile {
+  text-align: center;  
+}
+
+
+#editSection input[type="name"] { 
+  width: 100%;
+  max-width: 380px;
+  margin-top: 20px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+    font-size: 16px;
+    height: auto;
+}
+
+
+#editSection #inputCountry {
+  text-align: center;  
+  width: 100%;
+  max-width: 380px;
+  margin-top: 20px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  height: 45px;
+  color: #9c9c9c;
+}
+
 .btn-outline {
     background-color: transparent;
     color: inherit;
@@ -594,7 +654,7 @@ margin-top: 100px;
     margin-bottom: 20px;
 }
 .modal-content{
-height: 650px;
+
 }
 .img-comment{
   border-radius: 50%;

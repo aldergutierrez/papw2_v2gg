@@ -51,6 +51,10 @@ Route::get("/child", function (){
 	return view("child");
 });
 
+Route::get("/edit", function (){
+	return view("editProfile");
+});
+
 
 
 Auth::routes();
