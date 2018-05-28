@@ -3,10 +3,10 @@
 @section('content')
 <div class="fondosesion">
     <main id="registro1" role="main">
-        <form class="form-signin">
+        <form class="form-signin" method="POST" action="{{ route('login') }}">
              <h1 class="TxtHola">Konnichiwa.</h1>
 
-                    <form method="POST" action="{{ route('login') }}">
+                    
                         @csrf
 
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" placeholder="Enter your username or email" value="{{ old('email') }}" required autofocus>
@@ -45,7 +45,7 @@
                                 </a>
 
 
-                    </form> 
+            
     </form>
     </main>
 </div>
