@@ -5,7 +5,7 @@
     <main id="registro1" role="main">
     <form class="form-signin">
       <h1 id="text1registro" class="TxtHola">Ready for the best GameDev experience?</h1>
-      <h1 id="text2registro" class="h6 mb-3 font-weight-normal">Be part of bigest community of game develorers, testers, gamers, teach and creative people.</h1>
+      <h1 id="text2registro" class="h6 mb-3 ">Be part of bigest community of game develorers, testers, gamers, teach and creative people.</h1>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
