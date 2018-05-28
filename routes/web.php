@@ -55,6 +55,10 @@ Route::get("/edit", function (){
 	return view("editProfile");
 });
 
+Route::get("/teams", function (){
+	return view("teams");
+});
+
 
 
 Auth::routes();
