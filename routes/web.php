@@ -76,4 +76,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'createPostController@index')->name('landing');
 
-Route::post('/newPost', 'createPostController@store')->name('newpost');
+Route::name('newpost')->post('/newPost', 'createPostController@store');

@@ -1,11 +1,10 @@
  <div class="modal fade" id="Mpostear" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
-            
-            
+
             <div class="modal-body">
 
-@if(count($errors) > 0)
+            @if(count($errors) > 0)
 
 <div class="alert alert-danger">
   <ul>
@@ -15,36 +14,38 @@
   </ul>
 </div>
 @endif
-
-
-
-             <form action="{{ route('newpost') }}" method="POST">
+            
+            
+             <form action=" {{ route('newpost') }} " method="POST" id="new-Post">
 
              {{ csrf_field() }}
 
               <div class="form-group">
-                <input type="text" class="form-control" id="recipient-name" placeholder="Title">
+                <input type="text" name="title" class="form-control" id="recipient-name" placeholder="Title" value="{{ old('title') }}"/>
               </div>
 
               <div class="form-group"> 
-              <input type="file" name="input-file-1" id="input-file-1" style="width: 600px;">
+              <input name="input-file-1" id="input-file-1" style="width: 600px;" value="{{ old('image') }}"/>
               </div>
-
+ 
               <div class="form-group">
-                <input  type="text" class="form-control " style="height: 60px; " placeholder="Description">
+                <input  type="text" name="description" class="form-control " style="height: 60px; " placeholder="Description" value="{{ old('description') }}"/>
               </div>
             
               <div class="form-group">
-              <input  type="text" class="form-control " placeholder="Tag ur Fellas">
+              <input  type="text" name="fellasTag" class="form-control " placeholder="Tag ur Fellas" value="{{ old('fellasTag') }}"/>
               </div>
 
               <div class="form-group">
-              <input  type="text" class="form-control " placeholder="Tool Used">
+              <input  type="text" name="toolsUsed" class="form-control" placeholder="Tool Used" value="{{ old('toolsUsed') }}"/>
               </div>
 
               <div class="form-group">
-              <input  type="text" class="form-control " placeholder="Category">
+              <input  type="text" name="creativeField" class="form-control " placeholder="Category" value="{{ old('creativeField') }}"/>
               </div>
+                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class='btn btn-primary'>Post<span class="glyphicon glyphicon-chevron-right"></span></button>
+
                 </form>
               <!--
               <div class="form-group">
@@ -107,15 +108,6 @@
                   </ul>
                 </div>
                 </div>-->
-            </div>
-
-            <div class="modal-footer">
-                
-                  
-                
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Post<span class="glyphicon glyphicon-chevron-right"></span></button>
-              
             </div>
           </div>
         </div>

@@ -1,7 +1,7 @@
 <?php
 
 namespace App;
-
+use App\User;
 use Illuminate\Database\Eloquent\Model;
 
 class Posts extends Model
@@ -10,7 +10,13 @@ class Posts extends Model
 protected $table ='posts';
 
 	 protected $fillable = [
-        'titile', 'description', 'image','creativeField','toolsUsed','fellasTag','idUsers'
+        'title', 'description','image','creativeField','toolsUsed','fellasTag'
     ];
+
+    public function user(){
+
+    	return $this->belongsTo(User::class);
+
+    }
    
 }

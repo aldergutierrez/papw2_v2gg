@@ -3,11 +3,11 @@
 @section('content')
  <div class="fondosesion">
     <main id="registro1" role="main">
-    <form class="form-signin">
+     <form  class="form-signin" method="POST" action="{{ route('register') }}">
+                        @csrf
       <h1 id="text1registro" class="TxtHola">Ready for the best GameDev experience?</h1>
       <h1 id="text2registro" class="h6 mb-3 ">Be part of bigest community of game develorers, testers, gamers, teach and creative people.</h1>
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+                   
 
                         <div class="form-group ">
                         
@@ -68,7 +68,6 @@
                         <div class="form-group">
                                   <p class="mt-5 mb-3 text-muted"> Already have an account?</p>
                         </div>
-    </form>
     </form>
      </main>
      </div>

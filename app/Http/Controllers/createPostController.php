@@ -3,33 +3,29 @@
 namespace App\Http\Controllers;
 
 use App\Posts;
-use App\Http\Requests;
 use Illuminate\Http\Request;
+use App\Http\Requests\CreatePostRequest;
 
 class createPostController extends Controller
 {
     
         public function index()
     {
-    	$posts = Posts::all();
+    	$posts = Posts::orderBy('id', 'desc')->get();
 
         return view('/landing')->with(['posts' => $posts]);
     }
 
 
-          public function store(Request $request)
+          public function store(CreatePostRequest $request)
     {
 
-    	$this->validate($request,['title' => 'required',
-    		'description' => 'required',
-'image' => 'required',
-'creativeField' => 'required',
-'fellasTag' => 'required',
-'toolsUsed' => 'required',
-'idUsers' => 'required'
-]);
-
-    	dd($request->all());
+        $post = new Posts;
+        $post->fill($request->only('title', 'description', 'image' ,'creativeField','toolsUsed','fellasTag'));
+        $post->idUsers = $request->user()->id;
+        $post->save();
+        session()->flash('message', 'Post Created!');
+        return $this->index();
 
 
     }
