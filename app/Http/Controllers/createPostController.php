@@ -8,12 +8,20 @@ use App\Http\Requests\CreatePostRequest;
 
 class createPostController extends Controller
 {
+
+
     
         public function index()
     {
     	$posts = Posts::orderBy('id', 'desc')->get();
 
         return view('/landing')->with(['posts' => $posts]);
+    }
+
+    
+      public function show(Posts $post)
+    {
+        return view('post')->with(['post' => $post]);
     }
 
 
@@ -28,5 +36,15 @@ class createPostController extends Controller
         return $this->index();
 
 
+    }
+
+
+      public function edit(Posts $post)
+    {
+        if($post->user_id != \Auth::user()->id) {
+            return redirect()->route('landing');
+        }
+        
+        return view('editPost')->with(['post' => $post]);
     }
 }

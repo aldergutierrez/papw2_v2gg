@@ -11,8 +11,8 @@
        
     </head>
     <body>
-
- @include('navbar')
+@include('navbar')
+@include('post')
 @yield('content')
 
 
@@ -50,11 +50,7 @@
   });
 
  
-$( document ).ready(function() {
-  $("#post-id").click(function(){
-          $("#posts").modal();
-      });  
- });
+
 
 $( document ).ready(function() {
   $("#btnPostear").click(function(){
@@ -68,4 +64,10 @@ $( document ).ready(function() {
 
    
 
-    
+    @if(!empty($error_code) && $error_code == 5)
+<script>
+$(function() {
+    $('#posts').modal('show');
+});
+</script>
+@endif
