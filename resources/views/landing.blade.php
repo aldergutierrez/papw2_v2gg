@@ -21,7 +21,7 @@
           @foreach ($posts as $post)
           
           <div class="col-md-3 post">
-            <img id="post-id" class="card-img-top" src="img/image.jpg" src="holder.js/500x225" alt="Card image cap">
+            <img id="post-id" class="card-img-top" src="" src="holder.js/500x225" alt="Card image cap">
             <p class="noteTitle row">{{ $post->title }}</p>
             <p class="noteSub row">{{ $post->description }}</p>
             <div class="interaction btn-group center-block row ">
