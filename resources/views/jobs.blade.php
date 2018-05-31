@@ -23,13 +23,13 @@
 	 <div class="form-group">
 <div class="col-md-10 selectContainer">
             <select class="form-control location2" name="size">
-                <option value="">Choose a size</option>
-                <option value="s">Small (S)</option>
-                <option value="m">Medium (M)</option>
-                <option value="l">Large (L)</option>
-                <option value="xl">Extra large (XL)</option>
+                <option value="">Country/Region</option>
+                <option value="USA">United States of America</option>
+                <option value="MEX">Mexico</option>
+                <option value="CAN">Canada</option>
+                <option value="JPN">Japan</option>
             </select>
-            <input type="text" class="form-control location2 " name="lastName" placeholder="Last name" />
+            <input type="text" class="form-control location2 " name="lastName" placeholder="City" />
         </div>
          </form>
         <div class="location3 col-md-12"> <button type="button" class=" btn btn-azul">Apply</button></div>	
@@ -44,11 +44,11 @@
  		 <div class="form-group">
 <div class="col-md-10 selectContainer">
             <select class="form-control location2" name="size">
-                <option value="">Choose a size</option>
-                <option value="s">Small (S)</option>
-                <option value="m">Medium (M)</option>
-                <option value="l">Large (L)</option>
-                <option value="xl">Extra large (XL)</option>
+                <option value="">All Creative Fields</option>
+                <option value="">Artist</option>
+                <option value="">Programmer</option>
+                <option value="">Animator</option>
+                <option value="">Illustrator</option>
             </select>
         </div>
        
@@ -60,33 +60,33 @@
  <div class="col-md-12"><hr class="style2"></div>
 </div>
  <div class="col-md-7">
-     <div class="row col-md-10 TxtHola4">
-     		Hola
+     <div class="row col-md-9 TxtHola4">
+     		Digital Sunset
      </div>
-    		<div class="col-md-2 TxtHola4">
-     		amigos
+    		<div class="col-md-3 TxtHola4">
+     		Monterrey NL MEX
     </div>
     	<div class="row col-md-10">
      		<a href="" class="TxtHola3"><span>Senior Developer C++</span></a>
      </div>
     		<div class="col-md-2 TxtHola4">
-     		estais
+     		Full Time
     </div>
 <div class="col-md-12"><hr class="style2"></div>
  </div>
 
 <div class="col-md-7">
-     	<div class="row col-md-10 TxtHola4">
-     		Hola
+     	<div class="row col-md-9 TxtHola4">
+     		Rockstar Games
      </div>
-    		<div class="col-md-2 TxtHola4">
-     		amigos
+    		<div class="col-md-3 TxtHola4">
+     		San Diego CA USA
     </div>
     	<div class="row col-md-10 ">
      		<a href="" class="TxtHola3"><span>Concept Artist 2D</span></a>
      </div>
     		<div class="col-md-2 TxtHola4">
-     		estais
+     		Middle Time
     </div>
     <div class="col-md-12"><hr class="style2"></div>
 

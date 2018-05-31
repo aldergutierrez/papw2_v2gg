@@ -275,45 +275,58 @@ color: #74A5B2;
 
 }
 
-hr.style2 { 
-    display: block;
-    margin-top: 2.5em;
-    margin-bottom: 2.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-}
-
-
 .post{
   background-color: #e2e2e2;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 15px;
   margin: 5px 5px 30px 50px;
   padding-top: 10px;
-    padding-bottom: 10px;
+  padding-bottom: 10px;
  
 }
 
 .noteTitle
 {
-  padding-left: 15px;
-    
+  padding-top: 10px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13pt;
+  font-weight: 800 !important;
+  color: #424242;
 }
 
 
 .row + .noteSub
-{
-  padding-left: 15px;
-    padding-right: 15px
+{ 
+  
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10.5pt;
+  font-weight: 700 !important;
+  color: #424242;
 }
 
+.row + .noteCategory
+{ 
+  
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10pt;
+  font-weight: 600 !important;
+  color: #424242;
+}
 
+a.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #74A5B2;
+  text-decoration: none;
+}
 
 .post.col-md-3    
 {
   width: 20%;
+  padding: 0;
 }
 
 .card-img-top{
@@ -537,7 +550,28 @@ hr.style1{
   width: 400px;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+hr.style2 { 
+    display: block;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+hr.style3{
+  border-top: 1px solid #424242;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: auto;
+  margin-left: auto;
+    margin-right: auto;
   border-width: 0.5px;
+  display: block;
 }
 
 
@@ -702,4 +736,16 @@ font-weight: bold;
 .post-category{
       color: darkgray;
       font-size: 13px;
+}
+.center-cropped {
+  width: 235px;
+  height: 160px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+a.btn{
+  background-color: #424242;
+  color: white;
 }
