@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('title', 'Revdev - Jobs')
-
+@include('newJob')
     <!-- Bootstrap core CSS -->
 @section('content')
  <div class="container-fluid jobss">
@@ -9,7 +9,7 @@
 	<a href=""><span class="findlink TxtHola6">Find</span></a>
 </div>
 <div class="findblock col-md-6">
-	<div><a href=""><span class="findlink2 TxtHola6">Post</span></a></div>
+	<a href="{{ url('/newJob') }}" id="btnPostearJob" data-toggle="modal" data-target="#myModal"><span class="findlink2 TxtHola6">Post</span></a>
 </div>
 </div>
 
@@ -92,6 +92,16 @@
 
 
  </div>
-	
+
+
+<script>
+     $( document ).ready(function() {
+  $("#btnPostearJob").click(function(){
+          $("#MpostearJob").modal();
+      });  
+ });
+
+</script>
+
 @endsection
 

@@ -1,10 +1,4 @@
-@if(!empty($error_code) && $error_code == 5)
-<script>
-$(function() {
-    $('#posts').modal('show');
-});
-</script>
-@endif
+
 
        <div class="modal fade" id="posts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-lg" role="document">

@@ -63,17 +63,13 @@ Route::get("/teams", function (){
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
-
 
 Route::get('/', 'createPostController@index')->name('landing');
 
 Route::name('newpost')->post('/newPost', 'createPostController@store');
+ Route::name('editpost')->get('/editPost/{post}', 'createPostController@edit');
+ Route::name('post')->get('/post/{post}', 'createPostController@show');
+
+
+ Route::get('/jobs', 'jobsController@index')->name('jobs');
+Route::name('newJob')->post('/newJob', 'jobsController@store');

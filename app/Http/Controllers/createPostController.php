@@ -33,7 +33,7 @@ class createPostController extends Controller
         $post->idUsers = $request->user()->id;
         $post->save();
         session()->flash('message', 'Post Created!');
-        return $this->index();
+        return redirect()->route('landing');
 
 
     }

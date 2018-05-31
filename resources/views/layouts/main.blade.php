@@ -12,7 +12,6 @@
     </head>
     <body>
 @include('navbar')
-@include('post')
 @yield('content')
 
 
@@ -49,9 +48,6 @@
   });
   });
 
- 
-
-
 $( document ).ready(function() {
   $("#btnPostear").click(function(){
           $("#Mpostear").modal();
@@ -60,14 +56,11 @@ $( document ).ready(function() {
  });
 
 
-</script>
+     $( document ).ready(function() {
+  $("#btnPostearJob").click(function(){
+          $("#MpostearJob").modal();
+      });  
+ });
 
-   
 
-    @if(!empty($error_code) && $error_code == 5)
-<script>
-$(function() {
-    $('#posts').modal('show');
-});
 </script>
-@endif

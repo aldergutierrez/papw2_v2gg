@@ -2,6 +2,7 @@
 
 namespace App;
 use App\Posts;
+use App\Jobs;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -30,5 +31,10 @@ class User extends Authenticatable
     public function posts(){
 
         return $this->hasMany(Posts::class);
+    }
+
+      public function jobs(){
+
+        return $this->hasMany(Jobs::class);
     }
 }
