@@ -1,31 +1,30 @@
+@extends('layouts.main')
+@section('title', 'Revdev')
 
+    <!-- Bootstrap core CSS -->
+@section('content')
+ <div class="container">
 
-       <div class="modal fade" id="posts" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-         
               <div class="post-image" >
               <img src="../img/image.jpg">
               </div>
               <div class="post-comment">
                 <ul class="info">
-                  <li class="post-title">{{ $post->title }}</li>
+                  <li class="post-title">id->title </li>
                   <li class="post-account">aldergutierrez</li>
-                  <li class="post-category">{{ $post->creativeField }}</li>
+                  <li class="post-category">creativeField </li>
                 </ul>
-                <img src="img/{{ $post->image }}">
+                <img src="img/">
                 <div class="btn-follow btn">Follow</div>
                 <ul class="likes">
                   <li><span class="glyphicon glyphicon-heart"></span></li>
-                  <li>{{ $post->likes }}</li>
+                  <li>likes </li>
                   <li><span class="glyphicon glyphicon-heart"></span></li>
-                  <li>{{ $post->comments }}</li>
+                  <li>{{comments</li>
                   <li><span class="glyphicon glyphicon-heart"></span></li>
-                  <li>{{ $post->views }}</li>
+                  <li>views</li>
                 </ul>
-              <div class="date">Published: {{ $post-> created_at }}</div>
+              <div class="date">Published: created_at </div>
               <div class="border"></div>
               <img class="tool" src="../img/Pic1.jpg">
               <div class="border"></div>
@@ -56,10 +55,6 @@
  
               </div>
               </div>
-              </div>
+        </div>
+          @endsection
 
-
-              
-            </div>
-            </div>
-          </div>

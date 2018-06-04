@@ -22,7 +22,7 @@
           
           <div class="col-md-3 post">
 
-            <button type="submit" id="id-post" value="{{ $post->id }}"><img class="center-cropped img-responsive"  src="img/{{ $post->image}}"></button>
+            <a href="{{ route('post', ['id' => $post->id]) }}"  id="id-post" class="postimage" value="{{ $post->id }}"><img class="center-cropped img-responsive"  src="img/{{ $post->image}}"></a>
             <p class="noteTitle row">{{ $post->title }}</p>
             <p class="noteSub row">{{ $post->description }}</p>
             <div class="interaction btn-group center-block row ">
@@ -33,26 +33,14 @@
           </div>
            @endforeach
 
-<script>
-$('#id-post').onClick(function() {
-   $id = $('#id-post').val();
-   $id= {{$post->id}};
-    var ajaxurl = '{{route('post', ['post' => '$id'])}}';
-    $.ajax({
-        url: ajaxurl,
-        type: "GET",
-        success: function(data){
-            $data = $(data); // the HTML content that controller has produced
-            $(".container").html(data);
-        }
-    });
-});
-</script>
+
 
 
 
         </div>
       </div> <!-- /container -->
+
+      <div id="modalpost"></div>
 @endsection 
 
 

@@ -57,37 +57,29 @@
  	</div>
  </div>
 <div class="col-md-7">
+
+           @foreach ($jobs as $job)
  <div class="col-md-12"><hr class="style2"></div>
 </div>
  <div class="col-md-7">
      <div class="row col-md-9 TxtHola4">
-     		Digital Sunset
+     		{{ $job->employment }}
      </div>
     		<div class="col-md-3 TxtHola4">
-     		Monterrey NL MEX
+     		 {{ $job->city }},     {{ $job->country }}
     </div>
     	<div class="row col-md-10">
-     		<a href="" class="TxtHola3"><span>Senior Developer C++</span></a>
+     		<a href="" class="TxtHola3"><span>{{ $job->creativeField }}</span></a>
      </div>
     		<div class="col-md-2 TxtHola4">
-     		Full Time
+     		{{ $job->hours }}
     </div>
+
+     @endforeach
 <div class="col-md-12"><hr class="style2"></div>
  </div>
 
-<div class="col-md-7">
-     	<div class="row col-md-9 TxtHola4">
-     		Rockstar Games
-     </div>
-    		<div class="col-md-3 TxtHola4">
-     		San Diego CA USA
-    </div>
-    	<div class="row col-md-10 ">
-     		<a href="" class="TxtHola3"><span>Concept Artist 2D</span></a>
-     </div>
-    		<div class="col-md-2 TxtHola4">
-     		Middle Time
-    </div>
+
     <div class="col-md-12"><hr class="style2"></div>
 
 

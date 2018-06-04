@@ -68,7 +68,7 @@ Route::get('/', 'createPostController@index')->name('landing');
 
 Route::name('newpost')->post('/newPost', 'createPostController@store');
  Route::name('editpost')->get('/editPost/{post}', 'createPostController@edit');
- Route::name('post')->get('/post/{post}', 'createPostController@show');
+ Route::name('post')->get('/post/{id}', 'createPostController@show');
 
 
  Route::get('/jobs', 'jobsController@index')->name('jobs');
