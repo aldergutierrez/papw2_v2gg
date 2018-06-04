@@ -59,6 +59,9 @@ Route::get("/teams", function (){
 	return view("teams");
 });
 
+Route::get("/post", function (){
+	return view("post");
+});
 
 
 Auth::routes();
