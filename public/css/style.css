@@ -616,32 +616,34 @@ font-family: 'Raleway', sans-serif;
 margin-top: 100px;
 }
 
-.post-image{
-     
-  margin-top: 50px;
-}
-.comments{
-  
-}
-.post-image img{
-  width:100%;
-}
-.post-comment{
-  
-      margin-top: 50px;
-  }
-  .post-comment img{
-        position: absolute;
-  width: 50px;
-  border-radius: 50%;
-  margin-left: 1100px;
-  margin-top: -70px;
+ .post-image{
+       width:70%;
+         display: inline-block;
+
+    }
+    .comments{
+      
+    }
+    .post-image img{
+      width:100%;
+    }
+  .post-comment{
+    width: 25% !important;
+    display: inline-block;
+    position: absolute;
+    }
+    .post-comment img{
+          position: absolute;
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 200px;
+    margin-top: -70px;
 }
 
 .btn-follow{
     background: #3196ae;
     color: white;
-     margin-left: 1100px;
+    margin-left: 200px;
     padding: 4px 10px !important;
     margin-top: -30px;
     font-size: 10px !important;
@@ -650,13 +652,14 @@ margin-top: 100px;
     background: #3196ae;
     color: white;
     margin-left: 10px;
+    padding: 4px 10px !important;
     margin-top: 0px;
     width: 100%;
+    font-size: 10px !important;
     margin-bottom: 10px;
 }
 .likes{
   list-style: none;
-
 }
 
 .likes li{
@@ -721,12 +724,7 @@ font-weight: bold;
   margin-top: 6px;
 }
 .post-title{
-  color: #424242;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14pt;
-    font-weight: 800 !important;
-   display:table;
-    padding-top: 15px;
+  font-weight: bold;
 
 }
 .post-account{
