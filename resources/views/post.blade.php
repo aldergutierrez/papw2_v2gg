@@ -52,7 +52,7 @@
               <div class="txt-date">12:34am</div>
               <div class="comment">
                 <div class="txt-name">Alder</div>
-                <div class="txt-comm">Buen trabajo!</div>
+                <div class="txt-comm">Buen trabajo!!</div>
  
               </div>
               </div>
