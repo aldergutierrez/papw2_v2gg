@@ -6,6 +6,7 @@ use App\Posts;
 use Illuminate\Http\Request;
 use App\Http\Requests\CreatePostRequest;
 use App\Http\Requests\UpdatePostRequest;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
 class createPostController extends Controller
 {
@@ -55,5 +56,16 @@ class createPostController extends Controller
            $request->only('title', 'description', 'creativeField','toolsUsed','fellasTag'));
         session()->flash('message', 'Post Updated!');
        return view('post')->with(['post' => $idPost]);
+    }
+
+     public function delete(Posts $idPost)
+    {
+        if($idPost->idUsers != \Auth::user()->id) {
+            return view('post')->with(['post' => $idPost]);
+        }
+         $post=Posts::find($idPost);
+        $idPost->delete();
+        session()->flash('message', 'Post Deleted!');
+        return redirect()->route('landing');
     }
 }

@@ -60,7 +60,18 @@
               
               <textarea class="txt-comment"></textarea>
               <div class="btn btn-like">Post comment</div>
- <button class="btn btn-primary" id="btnEditar" type="button" data-toggle="modal" data-target="#myModal">Post</button>
+
+
+  @if($post->wasCreatedBy( Auth::user() ))
+                    <small class="pull-right">
+                         <button class="btn btn-primary" id="btnEditar" type="button" data-toggle="modal" data-target="#myModal">Post</button>
+                        <form action="{{ route('deletepost', ['idPost' => $post->id]) }}" method="POST">
+                            {{ csrf_field() }}
+                            {{ method_field('DELETE') }}
+                            <button type="submit" class='btn btn-danger'>Delete</button>
+                        </form>
+                    </small>
+                    @endif
               
         </div>
 

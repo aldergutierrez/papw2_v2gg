@@ -25,6 +25,7 @@ class CreateJobTable extends Migration
             $table->string('city');
             $table->unsignedInteger('idUsers');
             $table->timestamps();
+            $table->softDeletes();
             });
 
         Schema::table('job', function (Blueprint $table) {

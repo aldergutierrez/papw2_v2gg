@@ -22,12 +22,12 @@ class CreatePostsTable extends Migration
             $table->string('creativeField',50);
             $table->string('toolsUsed',100);
             $table->string('fellasTag');
-            $table->integer('likes');
-            $table->integer('comments');
-            $table->integer('views');
-            $table->datetime('creation');
+            $table->integer('likes')->default(0);
+            $table->integer('comments')->default(0);
+            $table->integer('views')->default(0);
             $table->unsignedInteger('idUsers');
             $table->timestamps();
+            $table->softDeletes();
              });
 
        
