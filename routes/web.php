@@ -73,7 +73,7 @@ Route::name('newpost')->post('/newPost', 'createPostController@store');
 Route::name('editpost')->get('/post/{idPost}/edit', 'createPostController@edit');
 Route::name('updatepost')->put('/post/{idPost}', 'createPostController@update');
 Route::name('post')->get('/post/{idPost}', 'createPostController@show');
-
+Route::name('deletepost')->delete('/post/{idPost}', 'createPostController@delete');
 
  Route::get('/jobs', 'jobsController@index')->name('jobs');
 Route::name('newJob')->post('/newJob', 'jobsController@store');

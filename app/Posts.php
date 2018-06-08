@@ -19,4 +19,12 @@ protected $table ='posts';
 
     }
    
+   public function wasCreatedBy($user)
+    {
+        if( is_null($user) ) {
+            return false;
+        }
+        return $this->idUsers === $user->id;
+    }
+
 }

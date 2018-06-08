@@ -56,4 +56,15 @@ class createPostController extends Controller
         session()->flash('message', 'Post Updated!');
        return view('post')->with(['post' => $idPost]);
     }
+
+     public function delete(Posts $idPost)
+    {
+        if($idPost->idUsers != \Auth::user()->id) {
+            return view('post')->with(['post' => $idPost]);
+        }
+
+        $idPost->delete();
+        session()->flash('message', 'Post Deleted!');
+        return redirect()->route('landing');
+    }
 }
