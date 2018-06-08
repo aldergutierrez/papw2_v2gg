@@ -70,8 +70,9 @@ Auth::routes();
 Route::get('/', 'createPostController@index')->name('landing');
 
 Route::name('newpost')->post('/newPost', 'createPostController@store');
- Route::name('editpost')->get('/editPost/{post}', 'createPostController@edit');
- Route::name('post')->get('/post/{id}', 'createPostController@show');
+Route::name('editpost')->get('/post/{idPost}/edit', 'createPostController@edit');
+Route::name('updatepost')->put('/post/{idPost}', 'createPostController@update');
+Route::name('post')->get('/post/{idPost}', 'createPostController@show');
 
 
  Route::get('/jobs', 'jobsController@index')->name('jobs');

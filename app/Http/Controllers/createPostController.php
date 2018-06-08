@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Posts;
 use Illuminate\Http\Request;
 use App\Http\Requests\CreatePostRequest;
+use App\Http\Requests\UpdatePostRequest;
 
 class createPostController extends Controller
 {
@@ -19,9 +20,9 @@ class createPostController extends Controller
     }
 
     
-      public function show(Posts $id)
+      public function show(Posts $idPost)
     {
-        return view('post')->with(['id' => $id]);
+        return view('post')->with(['post' => $idPost]);
     }
 
 
@@ -39,12 +40,20 @@ class createPostController extends Controller
     }
 
 
-      public function edit(Posts $post)
+      public function edit(Posts $idPost)
     {
-        if($post->user_id != \Auth::user()->id) {
-            return redirect()->route('landing');
-        }
+       // if($post->user_id != \Auth::user()->id) {
+          //  return redirect()->route('landing');
+       // }
         
-        return view('editPost')->with(['post' => $post]);
+        return view('post')->with(['post' => $idPost]);
+    }
+
+     public function update(Posts $idPost, UpdatePostRequest $request)
+    {
+        $idPost->update(
+           $request->only('title', 'description', 'creativeField','toolsUsed','fellasTag'));
+        session()->flash('message', 'Post Updated!');
+       return view('post')->with(['post' => $idPost]);
     }
 }

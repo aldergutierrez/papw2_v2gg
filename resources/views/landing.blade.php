@@ -28,7 +28,7 @@
             <div class="interaction btn-group center-block row ">
            <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">{{ $post->likes }} <span class="glyphicon glyphicon-heart"></span></a>
            <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">{{ $post->views }} <span class="glyphicon glyphicon-eye-open"></span></a>
-           <a class="btn btn-secondary col-md-4" href="#">{{ $post->comments }}<span class=" glyphicon glyphicon-comment"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#">{{ $post->comments }} <span class=" glyphicon glyphicon-comment"></span></a>
          </div>
           </div>
            @endforeach

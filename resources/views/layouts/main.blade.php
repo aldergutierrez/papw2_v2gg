@@ -62,4 +62,10 @@ $( document ).ready(function() {
       });  
  });
 
+          $( document ).ready(function() {
+  $("#btnEditar").click(function(){
+          $("#Meditar").modal();
+      });  
+ });
+
 </script>
