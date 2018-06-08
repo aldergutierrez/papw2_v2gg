@@ -20,6 +20,7 @@ class CreateCommentsTable extends Migration
             $table->unsignedInteger('idUser');
             $table->unsignedInteger('idPost');
             $table->timestamps();
+            $table->softDeletes();
         });
 
             Schema::table('comments', function (Blueprint $table) {
