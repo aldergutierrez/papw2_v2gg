@@ -41,7 +41,21 @@
               </div>
 
               <div class="form-group">
-              <input  type="text" name="creativeField" class="form-control " placeholder="Category" value="{{ old('creativeField') }}"/>
+              <!--<input  type="text" name="creativeField" class="form-control " placeholder="Category" value="{{ old('creativeField') }}"/>-->
+              <select id="inputCategory" class="form-control" value="{{ old('creativeField') }}">
+               <option selected>Category</option>
+               <option>Animation</option>
+               <option>Fine Arts</option>
+               <option>Illustration</option>
+               <option>Photography</option>
+               <option>Code</option>
+               <option>MDA</option>
+               <option>Game Design</option>
+               <option>Tutorial</option>
+               <option>Download</option>
+               <option>Character Design</option>
+               <option>Modeling</option>
+             </select>
               </div>
                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                 <button type="submit" class='btn btn-primary'>Post<span class="glyphicon glyphicon-chevron-right"></span></button>
