@@ -520,6 +520,20 @@ color: #878787;
   color: #9c9c9c;
 }
 
+#editSection #inputCategory {
+  text-align: center;  
+  width: 100%;
+  max-width: 380px;
+  margin-top: 20px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  height: 45px;
+  color: #9c9c9c;
+}
+
+
 #editSection #btn-registro{
    width: 100%;
   max-width: 380px;
@@ -616,28 +630,28 @@ font-family: 'Raleway', sans-serif;
 margin-top: 100px;
 }
 
- .post-image{
-       width:70%;
-         display: inline-block;
 
-    }
-    .comments{
-      
-    }
-    .post-image img{
-      width:100%;
-    }
-  .post-comment{
-    width: 25% !important;
-    display: inline-block;
-    position: absolute;
-    }
-    .post-comment img{
-          position: absolute;
-    width: 50px;
-    border-radius: 50%;
-    margin-left: 200px;
-    margin-top: -70px;
+
+ .post-image{
+     
+  margin-top: 50px;
+}
+.comments{
+  
+}
+.post-image img{
+  width:100%;
+}
+.post-comment{
+  
+      margin-top: 50px;
+  }
+  .post-comment img{
+        position: absolute;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 1100px;
+  margin-top: -70px;
 }
 
 .btn-follow{
