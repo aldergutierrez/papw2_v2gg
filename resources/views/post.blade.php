@@ -63,14 +63,14 @@
 
 
   @if($post->wasCreatedBy( Auth::user() ))
-                    <small class="pull-right">
-                         <button class="btn btn-primary" id="btnEditar" type="button" data-toggle="modal" data-target="#myModal">Post</button>
+                    
+                         <button class="btn btn-editpost" id="btnEditar" type="button" data-toggle="modal" data-target="#myModal">Edit</button>
                         <form action="{{ route('deletepost', ['idPost' => $post->id]) }}" method="POST">
                             {{ csrf_field() }}
                             {{ method_field('DELETE') }}
-                            <button type="submit" class='btn btn-danger'>Delete</button>
+                            <button type="submit" class='btn btn-deletepost'>Delete</button>
                         </form>
-                    </small>
+                    
                     @endif
               
         </div>
@@ -114,14 +114,57 @@
               </div>
 
               <div class="form-group">
-              <input  type="text" name="toolsUsed" class="form-control" placeholder="Tool Used" value="{{ $post->toolsUsed }}"/>
+              <select name="toolsUsed" id="inputCategory" class="form-control" value="{{  $post->toolsUsed }}"">
+               <option value="3DsMax"selected>tools Used</option>
+               <option value="Animation">3DsMax</option>
+               <option value="After Effects">After Effects</option>
+               <option value="Blender">Blender</option>
+               <option value="GameMaker">GameMaker</option>
+               <option value="Illustrator">Illustrator</option>
+               <option value="Krita">Krita</option>
+               <option value="Maya">Maya</option>
+               <option value="Photoshop">Photoshop</option>
+               <option value="ToonBoom">ToonBoom</option>
+               <option value="Unreal Engine">Unreal Engine</option>
+               <option value="Unity">Unity</option>
+               <option value="Visual Studio">Visual Studio</option>
+               <option value="ZBrush">ZBrush</option>
+             </select>
               </div>
 
               <div class="form-group">
-              <input  type="text" name="creativeField" class="form-control " placeholder="Category" value="{{ $post->creativeField }}"/>
+              
+              <select name="creativeField" id="inputCategory" class="form-control" value="{{ $post->creativeField }}">
+               <option value="Category"selected>Category</option>
+               <option value="Animation">Animation</option>
+               <option value="Art Direction">Art Direction</option>
+               <option value="Branding">Branding</option>
+               <option value="Code">Code</option>
+               <option value="Character Design">Character Design</option>
+               <option value="Concept Art">Concept Art</option>
+               <option value="Film">Film</option>
+               <option value="Game Design">Game Design</option>
+               <option value="Gameplay">Gameplay</option>
+               <option value="Graphic Design">Graphic Design</option>
+               <option value="Illustration">Illustration</option>
+               <option value="Low Poly">Low Poly</option>
+               <option value="Music">Music</option>
+               <option value="MDA">MDA</option>
+               <option value="Photography">Photography</option>
+               <option value="Programming">Programming</option>
+               <option value="Script">Script</option>
+               <option value="Sculpting">Sculpting</option>
+               <option value="Tutorial">Tutorial</option>
+               <option value="UI/UX">UI/UX</option>
+               <option value="VR/AR">VR/AR</option>
+               <option value="Visual Effects">Visual Effects</option>
+               <option value="Web Design">Web Design</option>
+               <option value="Sculpting">Writting</option>
+              
+             </select>
               </div>
                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="submit" class='btn btn-primary'>Post<span class="glyphicon glyphicon-chevron-right"></span></button>
+                <button type="submit" class='btn btn-primary'>Save<span class="glyphicon glyphicon-chevron-right"></span></button>
 
                 </form>
               <!--

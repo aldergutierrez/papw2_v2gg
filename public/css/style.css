@@ -657,10 +657,10 @@ margin-top: 100px;
 .btn-follow{
     background: #3196ae;
     color: white;
-    margin-left: 200px;
+    margin-left: 1090px;
     padding: 4px 10px !important;
-    margin-top: -30px;
-    font-size: 10px !important;
+    margin-top: -20px;
+
 }
 .btn-like{
     background: #3196ae;
@@ -669,7 +669,27 @@ margin-top: 100px;
     padding: 4px 10px !important;
     margin-top: 0px;
     width: 100%;
-    font-size: 10px !important;
+
+    margin-bottom: 10px;
+}
+.btn-editpost{
+    background: #3196ae;
+    color: white;
+    margin-left: 10px;
+    padding: 4px 20px !important;
+    margin-top: 0px;
+    
+
+    margin-bottom: 10px;
+}
+.btn-deletepost{
+    background: #d9534f;
+    color: white;
+    margin-left: 10px;
+    padding: 4px 20px !important;
+    margin-top: 0px;
+    
+
     margin-bottom: 10px;
 }
 .likes{
