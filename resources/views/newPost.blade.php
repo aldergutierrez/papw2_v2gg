@@ -38,8 +38,8 @@
 
               <div class="form-group">
                <select name="toolsUsed" id="inputCategory" class="form-control" value="{{ old('toolsUsed') }}"">
-               <option value="3DsMax"selected>tools Used</option>
-               <option value="Animation">3DsMax</option>
+               <option value="None"selected>tools Used</option>
+               <option value="3DsMax">3DsMax</option>
                <option value="After Effects">After Effects</option>
                <option value="Blender">Blender</option>
                <option value="GameMaker">GameMaker</option>
@@ -59,7 +59,7 @@
               <div class="form-group">
               <!--<input  type="text" name="creativeField" class="form-control " placeholder="Category" value="{{ old('creativeField') }}"/>-->
               <select name="creativeField" id="inputCategory" class="form-control" value="{{ old('creativeField') }}">
-               <option value="Category"selected>Category</option>
+               <option value="Other"selected>Category</option>
                <option value="Animation">Animation</option>
                <option value="Art Direction">Art Direction</option>
                <option value="Branding">Branding</option>

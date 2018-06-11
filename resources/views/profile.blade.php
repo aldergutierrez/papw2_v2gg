@@ -1,19 +1,40 @@
 @extends('layouts.main')
-@section('title', 'RevDev - Registro')
+@section('title', 'RevDev')
 
     <!-- Bootstrap core CSS -->
 @section('content')
         <section id="home" name="home"></section>
-          <div id="headerwrap">
-            <div class="container">
+          <div id="headerwrap" style="background: linear-gradient(
+                     rgba(20,20,20, .7), 
+                     rgba(20,20,20, .7)),
+                     url(../img/image.jpg);
+                    background-color: black; 
+                    margin-top: -10px;
+                    padding-top:20px;
+                    text-align:center;
+                    background-attachment: relative;
+                    background-position: center center;
+                    min-height: 740px;
+                    width: 100%;
+                    
+                      -webkit-background-size: 100%;
+                      -moz-background-size: 100%;
+                      -o-background-size: 100%;
+                      background-size: 100%;
+
+                      -webkit-background-size: cover;
+                      -moz-background-size: cover;
+                      -o-background-size: cover;
+                      background-size: cover;;">
+                              <div class="container">
               <a href="#"><span class="glyphicon glyphicon-option-horizontal" style="color:white" aria-hidden="true"></span></a>
               
               <div class="pictureProfile">
                 <img src="../img/Pic1.jpg" class="img-circle" style="height: 180px">
               </div>
 
-              <h2>Alder Gutierrez</h2>
-              <h4>@aldergutierrez</h4>
+              <h2>{{ Auth::user()->userName }}</h2>
+              <h4>{{ Auth::user()->email }}</h4>
               <a class="btn btn-default btn-outline">Follow</a>
               <br>
               <hr class="style1">
@@ -23,17 +44,17 @@
                     <span class="letters">Posts</span>
                     </div>
                     <div class="content">
-                  <span class="numbers">980</span>
+                  <span class="numbers">{{ Auth::user()->followers }}</span>
                     <span class="letters">Followers</span>
                     </div>
                     <div class="content">
-                  <span class="numbers">403</span>
+                  <span class="numbers">{{ Auth::user()->follows }}</span>
                     <span class="letters">Following</span>
                     </div>
                 </div>
                 <hr class="style1">
                 <div class="text">
-                Freelancer, illustrator, animator and Chipotle Lover.
+                {{ Auth::user()->description }}
                 </div>
                 <hr class="style1">
                 <div>

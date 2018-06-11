@@ -11,6 +11,11 @@
 |
 */
 
+use App\Posts;
+use Illuminate\Http\Request;
+
+
+
 Route::get("/", "PagesController@landing");
 
 
@@ -77,3 +82,14 @@ Route::name('deletepost')->delete('/post/{idPost}', 'createPostController@delete
 
  Route::get('/jobs', 'jobsController@index')->name('jobs');
 Route::name('newJob')->post('/newJob', 'jobsController@store');
+
+
+//Route::name('search')->post('/search', 'busquedaController@store');
+//Route::resource('/search', 'busquedaController');
+Route::resource('/search', 'busquedaController');
+/*
+Route::post("/search", function(){
+	$busqueda = Request::input('Busqueda'); 
+	return $busqueda;
+});
+*/

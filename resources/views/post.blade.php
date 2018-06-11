@@ -1,33 +1,43 @@
 @extends('layouts.main')
-@section('title', 'Revdev')
+@section('title', 'RevDev')
 
     <!-- Bootstrap core CSS -->
 @section('content')
  <div class="container">
 
               <div class="post-image" >
-              <img src="../img/image.jpg">
+              <img src="../img/{{ $post->image}}">
               </div>
               <div class="post-comment">
                 <ul class="info">
-                  <li class="post-title">id->title </li>
-                  <li class="post-account">aldergutierrez</li>
-                  <li class="post-category">creativeField </li>
+                  <li class="post-title">{{ $post->title }}</li>
+                  <li class="post-account">aldergutierrez**</li>
+                  <li class="post-category">{{ $post->creativeField }}</li>
                 </ul>
                 <img src="../img/Pic1.jpg">
                 <div class="btn-follow btn">Follow</div>
                 <ul class="likes">
                   <li><span class="glyphicon glyphicon-heart"></span></li>
                   <li>likes </li>
-                  <li><span class="glyphicon glyphicon-heart"></span></li>
-                  <li>comments</li>
-                  <li><span class="glyphicon glyphicon-heart"></span></li>
+                  <li><span class="glyphicon glyphicon-eye-open"></span></li>
                   <li>views</li>
+                  <li><span class="glyphicon glyphicon-comment"></span></li>
+                  <li>comments</li>
                 </ul>
-              <div class="date">Published: created_at </div>
+              <div class="date">Published: {{ $post->created_at }}</div>
               <div class="border"></div>
-              <span class="TxtHola4">Fellas n Tools</span>
-              <img class="tool" src="../img/Pic1.jpg">
+              <!--<img class="tool" src="../img/Pic1.jpg">-->
+              <p class="TxtHola7">{{ $post->description }}</p>
+
+              <div class="border"></div>
+              <span class="TxtHola4">Fellas</span>
+              <!--<img class="tool" src="../img/Pic1.jpg">-->
+              <p class="TxtHola7">{{ $post->fellasTag }}</p>
+
+              <div class="border"></div>
+
+              <span class="TxtHola4">Tools Used</span>
+              <p class="TxtHola7">{{ $post->toolsUsed }}</p>
               <div class="border"></div>
 
               <div class="btn btn-like">Like project</div>
@@ -115,8 +125,8 @@
 
               <div class="form-group">
               <select name="toolsUsed" id="inputCategory" class="form-control" value="{{  $post->toolsUsed }}"">
-               <option value="3DsMax"selected>tools Used</option>
-               <option value="Animation">3DsMax</option>
+               <option value="None"selected>tools Used</option>
+               <option value="3DsMax">3DsMax</option>
                <option value="After Effects">After Effects</option>
                <option value="Blender">Blender</option>
                <option value="GameMaker">GameMaker</option>
@@ -135,7 +145,7 @@
               <div class="form-group">
               
               <select name="creativeField" id="inputCategory" class="form-control" value="{{ $post->creativeField }}">
-               <option value="Category"selected>Category</option>
+               <option value="Other"selected>Category</option>
                <option value="Animation">Animation</option>
                <option value="Art Direction">Art Direction</option>
                <option value="Branding">Branding</option>

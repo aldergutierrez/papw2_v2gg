@@ -274,6 +274,15 @@ color: #74A5B2;
     padding-top: 15px;
 
 }
+.TxtHola7 {
+   color: gray;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13pt;
+    font-weight: 500 !important;
+   display:table;
+    margin:0 auto;
+
+}
 
 .post{
   background-color: #e2e2e2;
@@ -701,9 +710,10 @@ margin-top: 100px;
   margin: 5px;
 }
   .border{
-    border: 1px solid black;
+    border: 1px solid #424242;
     margin: 10px;
     width: 100%;
+    
   }
   .tool{
     width: 100px;
@@ -758,7 +768,11 @@ font-weight: bold;
   margin-top: 6px;
 }
 .post-title{
-  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18pt;
+  font-weight: 800 !important;
+  color: #424242;
+
 
 }
 .post-account{

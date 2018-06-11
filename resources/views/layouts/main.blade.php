@@ -8,6 +8,7 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
       <link href="{{ asset('css/jquery.Jcrop.min.css') }}" rel="stylesheet">
         <link href="{{ asset('css/custominputfile.min.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="Brand/revdev_logo2.png" />
        
     </head>
     <body>
@@ -29,21 +30,18 @@
   
   $("#btnSearch").click(function() {
     if($("#sss").val().length == 0){
+      if ($("#sss").width() <= 0) {
+          $("#sss").fadeTo(100, 1).animate({
+            width: "160px"
+        }, "slow");
+      }  else {
+        $("#sss").animate({
+            width: "0px"
+        }, "slow").fadeTo(100, 0);
+      }
+    }else{
 
-    if ($("#sss").width() <= 0) {
-
-        $("#sss").fadeTo(100, 1).animate({
-          width: "160px"
-      }, "slow");
-
-    } 
-    else {
-      $("#sss").animate({
-          width: "0px"
-      }, "slow").fadeTo(100, 0);
-    }
-
-
+      $( "#formSearch" ).submit();
     }
   });
   });

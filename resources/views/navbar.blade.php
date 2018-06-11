@@ -23,9 +23,10 @@
         <li><a href="{{ url('/jobs') }}">Jobs</a></li>  
       </ul>
 
- <form class="navbar-form navbar-right " role="search">
+ <form id="formSearch" method="post" action="/search" class="navbar-form navbar-right " role="search">
         <div class="form-group">
-          <input type="text" id="sss" style=" width: 0px">
+          {{ csrf_field() }}
+        <input name="buscar" type="text" id="sss" style=" width: 0px">
         <button class="btn btn-primary" id="btnSearch" type="button"><span class="glyphicon glyphicon-search" style="font-style: 50px;"></span></button>
    </form>
 
@@ -38,7 +39,7 @@
   <div class="dropdown" style="display: inline-block;">
     <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-chevron-down"></span></button>
      <ul class="dropdown-menu">
-    <li> <a href="#" style="float:right;">{{ Auth::user()->userName }} </a></li>
+    <li> <a href="{{ url('/profile') }}" style="float:right;">{{ Auth::user()->userName }} </a></li>
     <li><a href="{{ url('/edit') }}">Edit Profile</a></li>
     <li>     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();

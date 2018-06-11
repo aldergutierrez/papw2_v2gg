@@ -24,7 +24,7 @@
 
             <a href="{{ route('post', ['id' => $post->id]) }}"  id="id-post" class="postimage" value="{{ $post->id }}"><img class="center-cropped img-responsive"  src="img/{{ $post->image}}"></a>
             <p class="noteTitle row">{{ $post->title }}</p>
-            <p class="noteSub row">{{ $post->description }}</p>
+            <p class="noteSub row">{{ $post->creativeField }}</p>
             <div class="interaction btn-group center-block row ">
            <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">{{ $post->likes }} <span class="glyphicon glyphicon-heart"></span></a>
            <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">{{ $post->views }} <span class="glyphicon glyphicon-eye-open"></span></a>
