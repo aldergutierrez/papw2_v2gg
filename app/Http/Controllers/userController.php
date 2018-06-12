@@ -60,10 +60,15 @@ class userController extends Controller
                return redirect()->route('profile');
     }
 
-     public function delete(Posts $idPost)
+
+        public function delete(User $idUser)
     {
-        
+         $user = User::find($idUser);    
+         $user->delete();
+         return $user->delete();
     }
+        
+ 
 
     public function createComment(Request $request){
         $comment = e($request->comment);

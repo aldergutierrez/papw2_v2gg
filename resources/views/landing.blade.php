@@ -16,6 +16,10 @@
 
       <div class="container">
         <!-- Example row of columns -->
+        <div class="pagination text-center">
+            {{ $posts->render() }}
+</div>
+
         <div class="row">
 
            @foreach ($posts as $post)
@@ -32,9 +36,6 @@
          </div>
           </div>
            @endforeach
-
-
-
 
 
         </div>

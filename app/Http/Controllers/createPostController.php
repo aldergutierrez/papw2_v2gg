@@ -17,7 +17,7 @@ class createPostController extends Controller
     
         public function index()
     {
-    	$posts = Posts::orderBy('id', 'desc')->get();
+    	$posts = Posts::orderBy('id', 'desc')->paginate(8);
 
         return view('/landing')->with(['posts' => $posts]);
     }
@@ -28,7 +28,7 @@ class createPostController extends Controller
 
    $posts = DB::table('posts')->where('posts.id', $idPost->id)->get();
 
-      $users = DB::table('users')->select('users.id', 'users.userName', 'users.image')->leftJoin('posts', 'posts.idUsers', '=', 'users.id')->where('users.id', $idPost->idUsers)->get();
+      $users = DB::table('users')->select('users.id', 'users.userName', 'users.image')->leftJoin('posts', 'posts.idUsers', '=', 'users.id')->where('posts.id', $idPost->id)->get();
 
       $comments = DB::table('comments')->select('users.image', 'users.userName', 'comments.comment', 'comments.created_at')->leftJoin('users', 'users.id', '=', 'comments.idUser')->where('comments.idPost', $idPost->id)->get();
 

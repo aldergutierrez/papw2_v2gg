@@ -35,7 +35,7 @@
                            <button class="btn btn-primary" id="btnPostear" type="button" data-toggle="modal" data-target="#myModal">Post</button>
 <div class="input-group">
 
-  <a href="{{ url('/profile') }}"><img id="profileNavbar" src="../img/{{ Auth::user()->image }}"></a>
+  <a href="{{ url('/profile') }}"><img id="profileNavbar" src="/img/{{ Auth::user()->image }}"></a>
   <div class="dropdown" style="display: inline-block;">
     <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-chevron-down"></span></button>
      <ul class="dropdown-menu">

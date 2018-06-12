@@ -3,7 +3,7 @@
 
     <!-- Bootstrap core CSS -->
 @section('content')
-        <section id="home" name="home"></section>
+
           <div id="headerwrap" style="background: linear-gradient(
                      rgba(20,20,20, .7), 
                      rgba(20,20,20, .7)),

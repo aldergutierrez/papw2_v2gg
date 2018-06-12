@@ -18,7 +18,7 @@ class CreatePostsTable extends Migration
             $table->increments('id');
             $table->string('title',20);
             $table->string('description',500);
-            $table->string('image');
+            $table->string('image')->default('image.jpg');
             $table->string('creativeField',50);
             $table->string('toolsUsed',100);
             $table->string('fellasTag');

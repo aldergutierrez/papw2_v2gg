@@ -105,7 +105,7 @@ Route::post("/search", function(){
 Route::get('/profile', 'userController@index')->name('profile');
 Route::name('editProfile')->get('/profile/{name}/edit', 'userController@edit');
 Route::name('updateperfil')->put('/profile/{name}', 'userController@update');
-
+Route::name('deleteperfil')->delete('/profile/{name}', 'userController@delete');
 //Route::post('user/createcomment', 'userController@createComment');
 
 Route::post('/comment', 'CommentController@index')->middleware('auth');

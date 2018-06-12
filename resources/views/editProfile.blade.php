@@ -4,10 +4,22 @@
     <!-- Bootstrap core CSS -->
 @section('content')
 <div class="fondosesion">
-        <section id="home" name="home"></section>
 
           <div id="editSection">
-              <a href="#"><span class="glyphicon glyphicon-option-horizontal" style="color:white" aria-hidden="true"></span></a>
+
+            <div class="btn-group dropright">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="    background-color: transparent;">
+    <span class="glyphicon glyphicon-option-horizontal" style="color:white" aria-hidden="true" >
+  </button>
+  <div class="dropdown-menu">
+      <form action="{{ route('deleteperfil', ['name' => Auth::user()->id]) }}" method="POST">
+                            {{ csrf_field() }}
+                            {{ method_field('DELETE') }}
+                            <button type="submit" class='btn btn-deletepost'>Delete</button>
+                        </form>
+  </div>
+</div>
+              
               
               <div class="pictureProfile" style="margin-left: 33%; margin-bottom: 20px;" >
              <form action="{{ route('updateperfil', ['name' =>  Auth::user()->userName  ] ) }}" method="POST">
@@ -15,7 +27,7 @@
 
              {{ csrf_field() }}    
               <div class="input-group">
-           <img src="../img/Pic1.jpg" class="img-circle" style="height: 180px">
+           <img src="/img/{{ Auth::user()->image }}" class="img-circle" style="height: 180px">
                 <input type="file" class="form-control" id="profile_pic" name="image"
                       accept=".jpg, .jpeg, .png" value="{{ $user->image }}"/>
            </div></div>
@@ -39,6 +51,14 @@
              <input type="name" name="city" class="form-control" id="exampleFormControlInput1" placeholder="City" value="{{ $user->city }}" />
 
              <input type="name" name="description" class="form-control" id="exampleFormControlInput1" placeholder="Description" value="{{ $user->description }}" />
+
+             @if(Auth::user()->typeUser==1)
+                 <select name="typeUser" id="inputCountry" class="form-control" value="{{ $user->typeUser }}"/>
+               <option selected>Tipo de Usuario</option>
+               <option value="0" >Normal</option>
+               <option value="1">Administrador</option>
+             </select>
+               @endif
 
                 <button type="submit" class='btn btn-primary'>Aceptar</button>
 
