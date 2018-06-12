@@ -57,9 +57,9 @@ Route::get("/edit", function (){
 	return view("editProfile");
 });
 
-Route::get("/teams", function (){
-	return view("teams");
-});
+//Route::get("/teams", function (){
+//	return view("teams");
+//});
 
 Route::get("/post", function (){
 	return view("post");
@@ -88,6 +88,8 @@ Route::name('newJob')->post('/newJob', 'jobsController@store');
 //Route::name('search')->post('/search', 'busquedaController@store');
 //Route::resource('/search', 'busquedaController');
 Route::resource('/search', 'busquedaController');
+
+Route::resource('/teams', 'teamsController');
 /*
 Route::post("/search", function(){
 	$busqueda = Request::input('Busqueda'); 

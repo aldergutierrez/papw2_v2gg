@@ -13,11 +13,11 @@
 </div>
 </div>
 
- <div class="leftjobs col-md-5">
+<div class="leftjobs col-md-5">
  	<div class="jobs1 row">
  		<span class="TxtHola5">FILTER JOBS BY:</span>
  </div>
-<div class="jobs2 row">
+    <div class="jobs2 row">
 	<span class="location TxtHola2">LOCATION</span>
 	<form>
 	 <div class="form-group">
@@ -55,6 +55,10 @@
         </form>
    </div>
  	</div>
+    @foreach ($jobs as $job)
+    <div class=" jobs2 row">
+    </div>
+    @endforeach
  </div>
 <div class="col-md-7">
 
