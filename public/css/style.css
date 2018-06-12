@@ -856,13 +856,13 @@ section {
 }
   
 .bg-2 {
-  background: url('../img/welcome2.jpg') no-repeat top center fixed;
+  background: url('../img/imagepost11.gif') no-repeat top center fixed;
     color:#fff;
     background-size:cover;
 }
 
 .bg-3 {
-  background: url('../img/welcome1.jpg') no-repeat bottom center fixed;
+  background: url('../img/imagepost18.gif') no-repeat bottom center fixed;
     color:#fff;
     background-size:cover;
 }

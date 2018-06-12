@@ -27,7 +27,7 @@
 <section class="bg-1 text-center">
      <h1 class="">REVDEV</h1>
 
-    <p class="lead">Be part of aGameDev Community</p>
+    <p class="lead">Be part of a GameDev Community</p>
 <div class="form-group" id="login-registro" style="display: inline-block;">
                         <a class="btn " href="{{ route('register') }}" style="background-color: #65d35e; color: 
                         #fff; "><span class="glyphicon glyphicon-fire" style="font-style: 60px;"></span> Start</a>
@@ -68,11 +68,7 @@
                      <h3 class="">Meet people</h3>
 
                 </div>
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
-                    varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
-                    condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
-                    nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
-                    accumsan. Aliquam in felis sit amet augue.</div>
+                <div class="panel-body">"Nuestro equipo se conocio dentro de RevDev, teneniamos gustos en comun y gran talento para compartir, asi que decidimos empezar a trabajar juntos, ahora tenemos un excelente equipo" -Notch, el de minecra</div>
                 <div class="panel-footer text-right"><a href="#" class="btn btn-default"></a>
 
                 </div>
@@ -86,7 +82,8 @@
 <div class="divider"></div>
 <section class="bg-2">
     <div class="col-sm-10 col-sm-offset-1 text-center">
-         <h1 class="">Keep Going</h1>
+         <h1 class="">Artist of month</h1>
+         <p class="lead">Siouxsie</p>
 
     </div>
 </section>
@@ -96,69 +93,30 @@
         <div class="col-md-4">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                     <h3 class="">Hello.</h3>
+                     <h3 class="">RevDev it's for everyone creative.</h3>
 
                 </div>
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
-                    varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
-                    condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
-                    nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
-                    accumsan. Aliquam in felis sit amet augue.</div>
-                <div class="panel-footer text-right"><a href="#" class="btn btn-default">More</a>
-
-                </div>
+                <div class="panel-body"><div class="form-group" id="login-registro" style="display: inline-block;">
+                        <a class="btn " href="{{ route('register') }}" style="background-color: #65d35e; color: 
+                        #fff; "><span class="glyphicon glyphicon-fire" style="font-style: 60px;"></span> Start</a>
+                      </div></div>
+                
             </div>
         </div>
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                     <h3 class="">Hello.</h3>
-
-                </div>
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
-                    varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
-                    condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
-                    nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
-                    accumsan. Aliquam in felis sit amet augue.</div>
-                <div class="panel-footer text-right"><a href="#" class="btn btn-default">More</a>
-
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                     <h3 class="">Hello.</h3>
-
-                </div>
-                <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra
-                    varius quam sit amet vulputate. Quisque mauris augue, molestie tincidunt
-                    condimentum vitae, gravida a libero. Aenean sit amet felis dolor, in sagittis
-                    nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor
-                    accumsan. Aliquam in felis sit amet augue.</div>
-                <div class="panel-footer text-right"><a href="#" class="btn btn-default">More</a>
-
-                </div>
-            </div>
-        </div>
+        
     </div>
 </div>
 <!--/container-->
 <div class="divider"></div>
 <!--parallax 2 -->
 <section class="bg-3 text-center">
-     <h1 class="">Bootstrap Parallax</h1>
+
+     <img  alt="DevRev" src="{{ asset('Brand/revdev_logo2.png') }}" width="50px" >
 
     <p class="lead"></p>
 </section>
 <!--/parallax 2-->
-<div id="footer" class="">
-    <div class="container">
-        <p class="text-muted">RevDev
 
-        </p>
-    </div>
-</div>
 <!--Main Navigation-->
 @endsection 
 
