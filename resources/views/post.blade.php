@@ -44,48 +44,22 @@
 
               <div class="date">Comments(20)</div>
               <div class="comments">
-              <img class="img-comment" src="../img/Pic1.jpg">
-              <div class="txt-date">12:34am</div>
-              <div class="comment">
-                <div class="txt-name">Alder</div>
-                <div class="txt-comm">Buen trabajo!</div>
+                <img class="img-comment" src="../img/Pic1.jpg">
+                <div class="txt-date">12:34am</div>
+                <div class="comment">
+                  <div class="txt-name">Alder</div>
+                  <div class="txt-comm">Buen trabajo!</div>
+                  
+                </div>
+                <img class="img-comment" src="../img/Pic1.jpg">
+                <div class="txt-date">12:34am</div>
+                <div class="comment">
+                  <div class="txt-name">Alder</div>
+                  <div class="txt-comm">Buen trabajo!</div>
+    
+                </div>
                 
               </div>
-              <img class="img-comment" src="../img/Pic1.jpg">
-              <div class="txt-date">12:34am</div>
-              <div class="comment">
-                <div class="txt-name">Alder</div>
-                <div class="txt-comm">Buen trabajo!</div>
-  
-              </div>
-              <img class="img-comment" src="../img/Pic1.jpg">
-              <div class="txt-date">12:34am</div>
-              <div class="comment">
-                <div class="txt-name">Alder</div>
-                <div class="txt-comm">Buen trabajo!!</div>
- 
-              </div>
-              </div>
-
-              
-              <textarea class="txt-comment"></textarea>
-              <div class="btn btn-like">Post comment</div>
-
-
-  @if($post->wasCreatedBy( Auth::user() ))
-                    
-                         <button class="btn btn-editpost" id="btnEditar" type="button" data-toggle="modal" data-target="#myModal">Edit</button>
-                        <form action="{{ route('deletepost', ['idPost' => $post->id]) }}" method="POST">
-                            {{ csrf_field() }}
-                            {{ method_field('DELETE') }}
-                            <button type="submit" class='btn btn-deletepost'>Delete</button>
-                        </form>
-                    
-                    @endif
-              
-        </div>
-
-
 
 @if (Auth::check())
       <div class="panel panel-default" style="margin: 0; border-radius: 0;">
@@ -115,6 +89,28 @@
         </div>
       </div>
 @endif
+
+              
+              <!--
+              <textarea class="txt-comment"></textarea>
+              <div class="btn btn-like">Post comment</div>
+              -->
+
+@if($post->wasCreatedBy( Auth::user() ) or Auth::user()->typeUser==1)
+                    
+                         <button class="btn btn-editpost" id="btnEditar" type="button" data-toggle="modal" data-target="#myModal">Edit</button>
+                        <form action="{{ route('deletepost', ['idPost' => $post->id]) }}" method="POST">
+                            {{ csrf_field() }}
+                            {{ method_field('DELETE') }}
+                            <button type="submit" class='btn btn-deletepost'>Delete</button>
+                        </form>
+                    
+                    @endif
+              
+        </div>
+
+
+
 
 <div class="modal fade" id="Meditar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">

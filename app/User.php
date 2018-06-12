@@ -2,6 +2,7 @@
 
 namespace App;
 use App\Posts;
+use App\Comment;
 use App\Jobs;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -39,6 +40,6 @@ class User extends Authenticatable
     }
 
     public function comments() {
-        return $this->hasMany('App\Comments');
+        return $this->hasMany('App\Comment');
     }
 }

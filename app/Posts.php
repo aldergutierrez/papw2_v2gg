@@ -2,6 +2,7 @@
 
 namespace App;
 use App\User;
+use App\Comment;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -32,8 +33,7 @@ protected $table ='posts';
     }
 
     public function comments() {
-        return $this->hasMany('App\Comments');
+        return $this->hasMany('App\Comment');
     }
-
 
 }

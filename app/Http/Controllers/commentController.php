@@ -5,15 +5,17 @@ namespace App\Http\Controllers;
 use App\User;
 use App\Posts;
 use App\Jobs;
-use App\Comments;
-use Input
+use App\Comment;
+use Auth;
+use Session;
+use Input;
 use Illuminate\Http\Request;
 use App\Http\Requests\CreatePostRequest;
 use App\Http\Requests\UpdatePostRequest;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Http\Controllers\Controller;
 
-class busquedaController extends Controller{
+class CommentController extends Controller{
 
     public function index(Request $request) {
         $this->validate($request, [
@@ -22,12 +24,13 @@ class busquedaController extends Controller{
         ]);
         $comment = new Comment;
         $comment->comment = $request->comment;
-        $comment->user_id = Auth::user()->id;
-        $comment->post_id = $request->post_id;
+        $comment->idUser = Auth::user()->id;
+        $comment->idPost = $request->post_id;
         $comment->save();
 
         Session::flash('success', 'Your comment was succesffuly added');
         return redirect()->back();
+        //return "Jeje estas en el index del commentController";
     }
     
     public function show( $id){
