@@ -40,7 +40,7 @@
     <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-chevron-down"></span></button>
      <ul class="dropdown-menu">
     <li> <a href="{{ url('/profile') }}" style="float:right;">{{ Auth::user()->userName }} </a></li>
-    <li><a href="{{ url('/edit') }}">Edit Profile</a></li>
+    <li><a href="{{ route('editProfile', ['user' => Auth::user()->userName]) }}">Edit Profile</a></li>
     <li>     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

@@ -98,3 +98,5 @@ Route::post("/search", function(){
 */
 
 Route::get('/profile', 'userController@index')->name('profile');
+Route::name('editProfile')->get('/profile/{name}/edit', 'userController@edit');
+Route::name('updateperfil')->put('/profile/{name}', 'userController@update');
