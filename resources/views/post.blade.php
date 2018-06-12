@@ -85,56 +85,36 @@
               
         </div>
 
-<!--TUTORIAL-->
-@if (Session::has('status'))
-  <div class="bg-success" style="padding: 20px;">
-    {{Session::get('status')}}
-  </div>
-  <hr />
-@endif
+
+
 @if (Auth::check())
-  <form method="post" action="{{url('user/createcomment')}}">
-    {{csrf_field()}}
-    <div class="form-group">
-      <div class="row">
-        <div class="col-md-1">
-          <img src="{{url(Auth::user()->image)}}" class='img-responsive' style='max-width: 60px' />
-          <strong>{{Auth::user()->userName}}</strong>
-        </div>
-        <div class="col-md-6">
-          <textarea name="comment" class="form-control"></textarea>
-          <br />
-          <button type="submit" class="btn btn-primary">Publicar</button>
+      <div class="panel panel-default" style="margin: 0; border-radius: 0;">
+        <div class="panel-body">
+            <form action="{{ url('/comment') }}" method="POST" style="display: flex;">
+                {{ csrf_field() }}
+                <input type="hidden" name="post_id" value="{{ $post->id }}">
+                <input type="text" name="comment" placeholder="Enter your Comment" class="form-control" style="border-radius: 0;">
+                <input type="submit" value="Comment" class="btn btn-primary" style="border-radius: 0;">
+            </form>
+            @if (count($errors) > 0)
+                <div class="alert alert-danger">
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            {{ $error }}
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+            @if (Session::has('success'))
+                <div class="alert alert-success">
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                    {{ Session::get('success') }}
+                </div>
+            @endif
         </div>
       </div>
-    </div>
-  </form>
-  <hr />
-        <?php 
-        $comments = App\Comments::select()->orderBy('id', 'desc')->get();
-        foreach($comments as $comment):
-            $user = App\User::select()->where('id', '=', $comment->idUser)->first();
-        ?>
-        <div class="row">
-            <div class="col-md-1">
-                <img src='{{url($user->image)}}' class='img-responsive' style='max-width: 60px' />
-                <strong>{{$user->userName}}</strong>
-            </div>
-            <div class='col-md-6'>
-               {{$comment->comment}} 
-               <br />
-               <i>Fecha: {{$comment->created_at}}</i>
-            </div>
-        </div>
-        <hr />
-        <?php endforeach ?>
-@else
-  <hr />
-  <p class="bg-info" style="padding: 20px;">Para poder publicar comentarios tienes que <a href="{{url('/Login')}}">iniciar sesión</a></div>
-  <hr />
 @endif
-
-<!--TUTORIAL-->
 
 <div class="modal fade" id="Meditar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog modal-lg" role="document">

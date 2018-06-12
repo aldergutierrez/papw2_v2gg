@@ -31,4 +31,9 @@ protected $table ='posts';
         return $this->idUsers === $user->id;
     }
 
+    public function comments() {
+        return $this->hasMany('App\Comments');
+    }
+
+
 }
