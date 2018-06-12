@@ -3,87 +3,81 @@
 @include('newJob')
     <!-- Bootstrap core CSS -->
 @section('content')
- <div class="container-fluid jobss">
-<div class="fulljobs col-md-12" style="height: 50px;">
-<div class="findblock col-md-6">
-	<a href=""><span class="findlink TxtHola6">Find</span></a>
-</div>
-<div class="findblock col-md-6">
-	<a href="{{ url('/newJob') }}" id="btnPostearJob" data-toggle="modal" data-target="#myModal"><span class="findlink2 TxtHola6">Post</span></a>
-</div>
-</div>
 
- <div class="leftjobs col-md-5">
+
+ <div class="leftjobs col-md-12">
  	<div class="jobs1 row">
- 		<span class="TxtHola5">FILTER JOBS BY:</span>
- </div>
-<div class="jobs2 row">
-	<span class="location TxtHola2">LOCATION</span>
-	<form>
-	 <div class="form-group">
-<div class="col-md-10 selectContainer">
-            <select class="form-control location2" name="size">
-                <option value="">Country/Region</option>
-                <option value="USA">United States of America</option>
-                <option value="MEX">Mexico</option>
-                <option value="CAN">Canada</option>
-                <option value="JPN">Japan</option>
-            </select>
-            <input type="text" class="form-control location2 " name="lastName" placeholder="City" />
-        </div>
-         </form>
-        <div class="location3 col-md-12"> <button type="button" class=" btn btn-azul">Apply</button></div>	
-       
+ 		<span class="TxtHola5">Users</span>
     </div>
-      </div>
+    <div class="jobs2 row">
+        @foreach ($resultadousers as $resultadouser)
+          
+          <div class="col-md-2 post">
+
+            <a href="{{ route('post', ['id' => $resultadouser->id]) }}"  id="id-post" class="postimage" value="{{ $resultadouser->id }}"><img class="center-cropped img-responsive"  src="img/{{ $resultadouser->image}}"></a>
+            <p class="noteTitle row">{{ $resultadouser->userName }}</p>
+            <p class="noteSub row">{{ $resultadouser->description }}</p>
+            <p class="noteSub row">{{ $resultadouser->followers }} Followers</p>
+            <div class="btn-followThumn btn">Follow</div>
+
+          </div>
+           @endforeach
+    </div>
+ </div>
+  <div class="leftjobs col-md-12">
+    <div class="jobs1 row">
+        <span class="TxtHola5">Posts</span>
+    </div>
+    <div class="jobs2 row">
+        @foreach ($resultadoposts as $resultadopost)
+          
+          <div class="col-md-2 post">
+
+            <a href="{{ route('post', ['id' => $resultadopost->id]) }}"  id="id-post" class="postimage" value="{{ $resultadopost->id }}"><img class="center-cropped img-responsive"  src="img/{{ $resultadopost->image}}"></a>
+            <p class="noteTitle row">{{ $resultadopost->title }}</p>
+            <p class="noteSub row">{{ $resultadopost->creativeField }}</p>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">{{ $resultadopost->likes }} <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">{{ $resultadopost->views }} <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#">{{ $resultadopost->comments }} <span class=" glyphicon glyphicon-comment"></span></a>
+         </div>
+          </div>
+           @endforeach
+    </div>
+ </div>
+
+ <div class="leftjobs col-md-12">
+    <div class="jobs1 row">
+        <span class="TxtHola5">Jobs</span>
+    </div>
+    <div class="jobs2 row">
+        @foreach ($resultadojobs as $resultadojob)
+         <div class="col-md-12"><hr class="style2"></div>
+        </div>
+         <div class="col-md-12">
+             <div class="row col-md-9 TxtHola4">
+                    {{ $resultadojob->employment }}
+             </div>
+                    <div class="col-md-3 TxtHola4">
+                     {{ $resultadojob->city }},     {{ $resultadojob->country }}
+            </div>
+                <div class="row col-md-10">
+                    <a href="" class="TxtHola3"><span>{{ $resultadojob->description }}</span></a>
+             </div>
+                    <div class="col-md-2 TxtHola4">
+                    {{ $resultadojob->hours }}
+            </div>
+
+     @endforeach
+    </div>
+ </div>
+
+
+
 
  <!--mitad-->
-<div class=" jobs2 row">
- 	<span class="location TxtHola2">CREATIVE FIELD</span>
- 	<form>
- 		 <div class="form-group">
-<div class="col-md-10 selectContainer">
-            <select class="form-control location2" name="size">
-                <option value="">All Creative Fields</option>
-                <option value="">Artist</option>
-                <option value="">Programmer</option>
-                <option value="">Animator</option>
-                <option value="">Illustrator</option>
-            </select>
-        </div>
-       
-        </form>
-   </div>
- 	</div>
- </div>
-<div class="col-md-7">
-
-           
- <div class="col-md-12"><hr class="style2"></div>
-</div>
- <div class="col-md-7">
-     <div class="row col-md-9 TxtHola4">
-     		
-     </div>
-    		<div class="col-md-3 TxtHola4">
-     		 
-    </div>
-    	<div class="row col-md-10">
-     		<a href="" class="TxtHola3"><span></span></a>
-     </div>
-    		<div class="col-md-2 TxtHola4">
-     		
-    </div>
-
-    
-<div class="col-md-12"><hr class="style2"></div>
- </div>
 
 
-    <div class="col-md-12"><hr class="style2"></div>
-
-
- </div>
 
 
 <script>

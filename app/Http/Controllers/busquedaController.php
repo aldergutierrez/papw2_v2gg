@@ -14,7 +14,7 @@ use App\Http\Controllers\Controller;
 class busquedaController extends Controller{
 
     public function index(){
-    	return "Si";
+    	return "Jeje estas en el index del busquedaController";
     }
 
     
@@ -26,13 +26,16 @@ class busquedaController extends Controller{
     public function store(Request $request){    //Se muestran los primeros 10 resultados que coinciden
         //return "hola";
         $resultadousers = User::where('userName', $request->buscar)->orWhere('userName', 'like', '%'.$request->buscar.'%')->take(10)->get();
-       return $resultadousers;
+       
 
-       $resultadopost = Posts::where('title', $request->buscar)->orWhere('title', 'like', '%'.$request->buscar.'%')->take(10)->get();
-       return $resultadopost;
+       $resultadoposts = Posts::where('title', $request->buscar)->orWhere('title', 'like', '%'.$request->buscar.'%')->take(10)->get();
+       
 
        $resultadojobs = Jobs::where('creativeField', $request->buscar)->orWhere('creativeField', 'like', '%'.$request->buscar.'%')->take(10)->get();
-       return $resultadojobs;
+
+       return view('resultados', compact('resultadousers', 'resultadoposts', 'resultadojobs'));
+
+       //return $resultadopost;
     }
 
     public function edit( $idPost){ 

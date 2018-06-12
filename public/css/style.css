@@ -672,6 +672,14 @@ margin-top: 100px;
     margin-top: -20px;
 
 }
+.btn-followThumn{
+    background: #3196ae;
+    color: white;
+    margin-left: 90px;
+    padding: 4px 10px !important;
+    
+
+}
 .btn-like{
     background: #3196ae;
     color: white;
