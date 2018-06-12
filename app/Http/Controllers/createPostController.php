@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use DB;
 use App\Posts;
+use App\User;
+use App\Comment;
 use Illuminate\Http\Request;
 use App\Http\Requests\CreatePostRequest;
 use App\Http\Requests\UpdatePostRequest;
@@ -24,12 +26,14 @@ class createPostController extends Controller
       public function show(Posts $idPost)
     {
 
-      /*$data = DB::table('posts')->with(['post' => $idPost])
-    ->join('users', 'users.id', '=', 'posts.idUsers')
-    ->get(array('posts.*', 'users.userName'));*/
+   $posts = DB::table('posts')->where('posts.id', $idPost->id)->get();
 
+      $users = DB::table('users')->select('users.id', 'users.userName', 'users.image')->leftJoin('posts', 'posts.idUsers', '=', 'users.id')->where('users.id', $idPost->idUsers)->get();
 
-        return view('post')->with(['post' => $idPost]);
+      $comments = DB::table('comments')->select('users.image', 'users.userName', 'comments.comment')->leftJoin('users', 'users.id', '=', 'comments.idUser')->where('comments.idPost', $idPost->id)->get();
+
+        return view('post', compact('posts', 'users', 'comments', 'idPost'));
+         
     }
 
 

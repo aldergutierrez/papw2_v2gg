@@ -4,25 +4,26 @@
     <!-- Bootstrap core CSS -->
 @section('content')
  <div class="container">
-
+@foreach ($users as $user)
+@foreach ($posts as $post)
               <div class="post-image" >
               <img src="../img/{{ $post->image}}">
               </div>
               <div class="post-comment">
                 <ul class="info">
                   <li class="post-title">{{ $post->title }}</li>
-                  <li class="post-account">aldergutierrez**</li>
+                  <li class="post-account">{{ $user->userName }}</li>
                   <li class="post-category">{{ $post->creativeField }}</li>
                 </ul>
-                <img src="../img/Pic1.jpg">
+                <img src="../img/{{ $user->image }}">
                 <div class="btn-follow btn">Follow</div>
                 <ul class="likes">
                   <li><span class="glyphicon glyphicon-heart"></span></li>
-                  <li>likes </li>
+                  <li>{{ $post->likes }} </li>
                   <li><span class="glyphicon glyphicon-eye-open"></span></li>
-                  <li>views</li>
+                  <li>{{ $post->views }}</li>
                   <li><span class="glyphicon glyphicon-comment"></span></li>
-                  <li>comments</li>
+                  <li>{{ $post->comments }}</li>
                 </ul>
               <div class="date">Published: {{ $post->created_at }}</div>
               <div class="border"></div>
@@ -39,27 +40,23 @@
               <span class="TxtHola4">Tools Used</span>
               <p class="TxtHola7">{{ $post->toolsUsed }}</p>
               <div class="border"></div>
+@endforeach
+@endforeach
+
 
               <div class="btn btn-like">Like project</div>
 
               <div class="date">Comments(20)</div>
+              @foreach ($comments as $comment)
               <div class="comments">
-                <img class="img-comment" src="../img/Pic1.jpg">
+                <img class="img-comment" src="../img/{{ $comment->image}}">
                 <div class="txt-date">12:34am</div>
                 <div class="comment">
-                  <div class="txt-name">Alder</div>
-                  <div class="txt-comm">Buen trabajo!</div>
+                  <div class="txt-name">{{ $comment->userName}}</div>
+                  <div class="txt-comm">{{ $comment->comment}}</div>
                   
                 </div>
-                <img class="img-comment" src="../img/Pic1.jpg">
-                <div class="txt-date">12:34am</div>
-                <div class="comment">
-                  <div class="txt-name">Alder</div>
-                  <div class="txt-comm">Buen trabajo!</div>
-    
-                </div>
-                
-              </div>
+             @endforeach
 
 @if (Auth::check())
       <div class="panel panel-default" style="margin: 0; border-radius: 0;">
@@ -96,7 +93,7 @@
               <div class="btn btn-like">Post comment</div>
               -->
 
-@if($post->wasCreatedBy( Auth::user() ) or Auth::user()->typeUser==1)
+@if($idPost->wasCreatedBy( Auth::user() ) or Auth::user()->typeUser==1)
                     
                          <button class="btn btn-editpost" id="btnEditar" type="button" data-toggle="modal" data-target="#myModal">Edit</button>
                         <form action="{{ route('deletepost', ['idPost' => $post->id]) }}" method="POST">
@@ -108,7 +105,6 @@
                     @endif
               
         </div>
-
 
 
 
