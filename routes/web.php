@@ -18,6 +18,9 @@ use Illuminate\Http\Request;
 
 Route::get("/", "PagesController@landing");
 
+Route::get("/welcome", function (){
+	return view("landwelcome");
+});
 
 Route::get("/sesion", function (){
 	return view("login");
@@ -85,6 +88,7 @@ Route::name('deletepost')->delete('/post/{idPost}', 'createPostController@delete
 Route::name('newJob')->post('/newJob', 'jobsController@store');
 Route::name('deletejob')->delete('/jobs/{idJob}', 'jobsController@delete');
 Route::name('updatejob')->put('/jobs/{idJob}', 'jobsController@update');
+Route::name('deleteperfil')->delete('/profile/{name}', 'userController@delete');
 
 //Route::name('search')->post('/search', 'busquedaController@store');
 //Route::resource('/search', 'busquedaController');

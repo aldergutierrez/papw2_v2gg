@@ -661,11 +661,13 @@ margin-top: 100px;
       margin-top: 50px;
   }
   .post-comment img{
-        position: absolute;
-  width: 50px;
-  border-radius: 50%;
-  margin-left: 1100px;
-  margin-top: -70px;
+    position: absolute;
+    margin-left: 1100px;
+    margin-top: -70px;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
 }
 
 .btn-follow{
@@ -764,7 +766,9 @@ margin-top: 100px;
   display: inline-block;
   margin-top: 0px !important;
   margin-left: 10px !important;
-  width: 40px !important;
+  
+  width: 40px!important;
+  height: 40px!important;
 }
 .txt-name{
 display: inline-block;
@@ -818,4 +822,67 @@ object-fit: cover;
 a.btn{
   background-color: #424242;
   color: white;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../img/welcome2.jpg');
+
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.divider {
+    height:50px;
+}
+
+section {
+    height:500px;
+    padding-top:100px;
+    padding-bottom:50px;
+    overflow:auto;
+}
+
+.bg-1 {
+  background: url('../img/welcome4.jpg') no-repeat center center fixed;
+    color:#fff;
+    background-size:cover;
+}
+  
+.bg-2 {
+  background: url('../img/welcome2.jpg') no-repeat top center fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+.bg-3 {
+  background: url('../img/welcome1.jpg') no-repeat bottom center fixed;
+    color:#fff;
+    background-size:cover;
+}
+
+#footer {
+    height: 60px;
+    background-color:#585858;
+    margin-top:50px;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+#footer a {
+  color:#efefef;
+}
+
+h1 {
+  margin-top: 10px;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 26pt;
+  font-weight: 800 !important;
 }
