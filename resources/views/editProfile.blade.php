@@ -5,6 +5,7 @@
 @section('content')
 <div class="fondosesion">
         <section id="home" name="home"></section>
+
           <div id="editSection">
               <a href="#"><span class="glyphicon glyphicon-option-horizontal" style="color:white" aria-hidden="true"></span></a>
               
@@ -12,6 +13,7 @@
                 <img src="../img/Pic1.jpg" class="img-circle" style="height: 180px">
               </div>
 
+            <input name="input-file-2" id="input-file-2" style="width: 600px;" value="{{ old('image') }}"/>
             
             <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Name">
 

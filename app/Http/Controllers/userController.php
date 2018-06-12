@@ -13,9 +13,12 @@ class userController extends Controller
 
 
     
-        public function index()
+       public function index()
     {
-    	
+      $posts = Posts::where('idUsers', 1)->orderBy('id', 'desc')->get();
+
+        return view('/profile')->with(['posts' => $posts]);
+
     }
 
     
@@ -27,6 +30,8 @@ class userController extends Controller
 
       public function store(CreatePostRequest $request)
     {
+
+        
 
         
 

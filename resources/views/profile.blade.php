@@ -12,19 +12,9 @@
                     margin-top: -10px;
                     padding-top:20px;
                     text-align:center;
-                    background-attachment: relative;
                     background-position: center center;
                     min-height: 740px;
                     width: 100%;
-                    
-                      -webkit-background-size: 100%;
-                      -moz-background-size: 100%;
-                      -o-background-size: 100%;
-                      background-size: 100%;
-
-                      -webkit-background-size: cover;
-                      -moz-background-size: cover;
-                      -o-background-size: cover;
                       background-size: cover;;">
                               <div class="container">
               <a href="#"><span class="glyphicon glyphicon-option-horizontal" style="color:white" aria-hidden="true"></span></a>
@@ -64,64 +54,35 @@
                  <a href="#"><i class="fa iconSocial">&#xf099;</i></a>
                 </div>
               </div>
-              <a href="#"><img src="../img/downarrow.png" class="arrowdown" ></a>
+              <a id="downarrow" href="#section1"><img src="../img/downarrow.png" class="arrowdown" ></a>
   
           </div><!-- /headerwrap -->     
      
 
-      <div class="container">
+      <div id="section1" class="container">
         <!-- Example row of columns -->
         <div class="row">
-          <div class="col-md-3 post">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-            <p class="noteTitle row">Donec id elit</p>
-            <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
-            <div class="interaction input-group center-block row ">
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-         </div>
-          </div>
-          <div class="col-md-3 post">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-            <p class="noteTitle row">Donec id elit</p>
-            <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
-            <div class="interaction input-group center-block row ">
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-         </div>
-          </div>
 
-          <div class="col-md-3 post">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-            <p class="noteTitle row">Donec id elit</p>
-            <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
-            <div class="interaction input-group center-block row ">
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-         </div>
-          </div>
-
-          <div class="col-md-3 post">
-            <img class="card-img-top" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail" alt="Card image cap">
-            <p class="noteTitle row">Donec id elit</p>
-            <p class="noteSub row">gravida at eget metus. Fusce dapibus, tellus ac cursus commodo</p>
-            <div class="interaction input-group center-block row ">
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">AAA</a>
-         </div>
-          </div>
-
+           @foreach ($posts as $post)
           
+          <div class="col-md-3 post">
 
-          
+            <a href="{{ route('post', ['id' => $post->id]) }}"  id="id-post" class="postimage" value="{{ $post->id }}"><img class="center-cropped img-responsive"  src="img/{{ $post->image}}"></a>
+            <p class="noteTitle row">{{ $post->title }}</p>
+            <p class="noteSub row">{{ $post->creativeField }}</p>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">{{ $post->likes }} <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">{{ $post->views }} <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#">{{ $post->comments }} <span class=" glyphicon glyphicon-comment"></span></a>
+         </div>
+          </div>
+           @endforeach
+
+
+
+
+
         </div>
-
-        <hr>
-
       </div> <!-- /container -->
 
 @endsection

@@ -428,6 +428,7 @@ color: #878787;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    margin-bottom: 50px;
 
 }
 
@@ -713,7 +714,7 @@ margin-top: 100px;
     border: 1px solid #424242;
     margin: 10px;
     width: 100%;
-    
+
   }
   .tool{
     width: 100px;

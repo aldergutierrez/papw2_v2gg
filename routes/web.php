@@ -39,9 +39,6 @@ Route::get("/postear", function (){
 	return view("postear");
 });
 
-Route::get("/profile", function (){
-	return view("profile");
-});
 
 Route::get("/navbar", function (){
 	return view("navbar");
@@ -73,6 +70,8 @@ Auth::routes();
 
 
 Route::get('/', 'createPostController@index')->name('landing');
+
+Route::get('/profile', 'userController@index')->name('profile');
 
 Route::name('newpost')->post('/newPost', 'createPostController@store');
 Route::name('editpost')->get('/post/{idPost}/edit', 'createPostController@edit');

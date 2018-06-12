@@ -125,7 +125,7 @@
 
               <div class="form-group">
               <select name="toolsUsed" id="inputCategory" class="form-control" value="{{  $post->toolsUsed }}"">
-               <option value="None"selected>tools Used</option>
+               <option value="None"selected>Tools Used - None</option>
                <option value="3DsMax">3DsMax</option>
                <option value="After Effects">After Effects</option>
                <option value="Blender">Blender</option>
@@ -145,7 +145,7 @@
               <div class="form-group">
               
               <select name="creativeField" id="inputCategory" class="form-control" value="{{ $post->creativeField }}">
-               <option value="Other"selected>Category</option>
+               <option value="Other"selected>Category - Other</option>
                <option value="Animation">Animation</option>
                <option value="Art Direction">Art Direction</option>
                <option value="Branding">Branding</option>

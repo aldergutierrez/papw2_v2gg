@@ -22,15 +22,33 @@
              {{ csrf_field() }}
 
               <div class="form-group">
-                <input type="text" name="employment" class="form-control" id="recipient-name" placeholder="Title" value="{{ old('employment') }}"/>
+                <input type="text" name="employment" class="form-control" id="recipient-name" placeholder="Company Name" value="{{ old('employment') }}"/>
               </div>
 
               <div class="form-group">
-                <input type="text" name="description" class="form-control" id="recipient-name" placeholder="description" value="{{ old('description') }}"/>
+                <input type="text" name="description" class="form-control" id="recipient-name" placeholder="Job title" value="{{ old('description') }}"/>
               </div>
 
               <div class="form-group">
-                <input type="text" name="creativeField" class="form-control" id="recipient-name" placeholder="creativeField" value="{{ old('creativeField') }}"/>
+                <!--<input type="text" name="creativeField" class="form-control" id="recipient-name" placeholder="Creative field" value="{{ old('creativeField') }}"/>-->
+                <select name="creativeField" id="inputCategory" class="form-control" value="{{ old('creativeField') }}">
+               <option value="Other"selected>Creative Field - Other</option>
+               <option value="Animation">Animation</option>
+               <option value="Art Direction">Art Direction</option>
+               <option value="Concept Art">Concept Art</option>
+               <option value="Concept Art">Copy</option>
+               <option value="Editort">Editor</option>
+               <option value="Game Design">Game Design</option>
+               <option value="Graphic Design">Graphic Design</option>
+               <option value="Illustration">Illustration</option>
+               <option value="Music">Music</option>
+               <option value="Marketing">Marketing</option>
+               <option value="Photography">Photography</option>
+               <option value="Programming">Programming</option>
+               <option value="Visual Effects">Visual Effects</option>
+               <option value="Web Design">Web Design</option>
+              
+             </select>
               </div>
 
               <div class="form-group">
