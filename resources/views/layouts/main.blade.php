@@ -46,6 +46,15 @@
   });
   });
 
+  $( document ).ready(function() {
+  
+  $("#btnSearch2").click(function() {
+
+      $( "#formSearch2" ).submit();
+  });
+  });
+
+
 $( document ).ready(function() {
   $("#btnPostear").click(function(){
           $("#Mpostear").modal();

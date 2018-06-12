@@ -105,3 +105,5 @@ Route::name('updateperfil')->put('/profile/{name}', 'userController@update');
 //Route::post('user/createcomment', 'userController@createComment');
 
 Route::post('/comment', 'CommentController@index')->middleware('auth');
+
+Route::post('/like', 'LikeController@index')->middleware('auth');

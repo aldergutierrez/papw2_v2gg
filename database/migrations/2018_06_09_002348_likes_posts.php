@@ -18,6 +18,7 @@ class LikesPosts extends Migration
             $table->increments('id');
             $table->unsignedInteger('idUser');
             $table->unsignedInteger('idPost');
+            $table->boolean('like');
             $table->timestamps();
          
         });
