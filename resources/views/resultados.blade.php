@@ -58,24 +58,24 @@
  </div>
 <div class="col-md-7">
 
-           @foreach ($jobs as $job)
+           
  <div class="col-md-12"><hr class="style2"></div>
 </div>
  <div class="col-md-7">
      <div class="row col-md-9 TxtHola4">
-     		{{ $job->employment }}
+     		
      </div>
     		<div class="col-md-3 TxtHola4">
-     		 {{ $job->city }},     {{ $job->country }}
+     		 
     </div>
     	<div class="row col-md-10">
-     		<a href="" class="TxtHola3"><span>{{ $job->description }}</span></a>
+     		<a href="" class="TxtHola3"><span></span></a>
      </div>
     		<div class="col-md-2 TxtHola4">
-     		{{ $job->hours }}
+     		
     </div>
 
-     @endforeach
+    
 <div class="col-md-12"><hr class="style2"></div>
  </div>
 

@@ -65,13 +65,15 @@ Route::get("/post", function (){
 	return view("post");
 });
 
+Route::get("/resultados", function (){
+	return view("resultados");
+});
+
 
 Auth::routes();
 
 
 Route::get('/', 'createPostController@index')->name('landing');
-
-Route::get('/profile', 'userController@index')->name('profile');
 
 Route::name('newpost')->post('/newPost', 'createPostController@store');
 Route::name('editpost')->get('/post/{idPost}/edit', 'createPostController@edit');
@@ -92,3 +94,5 @@ Route::post("/search", function(){
 	return $busqueda;
 });
 */
+
+Route::get('/profile', 'userController@index')->name('profile');
