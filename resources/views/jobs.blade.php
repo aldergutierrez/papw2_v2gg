@@ -42,16 +42,13 @@
  	<span class="location TxtHola2">CREATIVE FIELD</span>
  	<form>
  		 <div class="form-group">
-<div class="col-md-10 selectContainer">
-            <select class="form-control location2" name="size">
-                <option value="">All Creative Fields</option>
-                <option value="">Artist</option>
-                <option value="">Programmer</option>
-                <option value="">Animator</option>
-                <option value="">Illustrator</option>
-            </select>
+        <div class="col-md-10 selectContainer">
+            <form id="formSearch2" method="post" action="/search" role="search">
+                  {{ csrf_field() }}
+                <input name="buscar" placeholder="Creative Field" type="text" id="sss2" style=" width: 450px">
+                <button class="btn btn-primary" id="btnSearch2" type="button"><span class="glyphicon glyphicon-search" style="font-style: 50px;"></span></button>
+            </form>
         </div>
-       
         </form>
    </div>
  	</div>
@@ -63,31 +60,31 @@
 <div class="col-md-7">
 
            @foreach ($jobs as $job)
- <div class="col-md-12"><hr class="style2"></div>
-</div>
- <div class="col-md-7">
-     <div class="row col-md-9 TxtHola4">
-     		{{ $job->employment }}
-     </div>
-    		<div class="col-md-3 TxtHola4">
-     		 {{ $job->city }},     {{ $job->country }}
-    </div>
-    	<div class="row col-md-10">
-     		<a href="" class="TxtHola3"><span>{{ $job->description }}</span></a>
-     </div>
-    		<div class="col-md-2 TxtHola4">
-     		{{ $job->hours }}
-    </div>
-  @if($job->wasCreatedBy( Auth::user() ) or Auth::user()->typeUser==1)
-                    
-                        
-                        <form action="{{ route('deletejob', ['idJob' => $job->id]) }}" method="POST">
-                            {{ csrf_field() }}
-                            {{ method_field('DELETE') }}
-                            <button type="submit" class='btn btn-deletepost'>Close</button>
-                        </form>
-                    
-                    @endif
+                 <div class="col-md-12"><hr class="style2"></div>
+                </div>
+                 <div class="col-md-7">
+                     <div class="row col-md-9 TxtHola4">
+                     		{{ $job->employment }}
+                     </div>
+                    		<div class="col-md-3 TxtHola4">
+                     		 {{ $job->city }},     {{ $job->country }}
+                    </div>
+                    	<div class="row col-md-10">
+                     		<a href="" class="TxtHola3"><span>{{ $job->description }}</span></a>
+                     </div>
+                    		<div class="col-md-2 TxtHola4">
+                     		{{ $job->hours }}
+                    </div>
+                  @if($job->wasCreatedBy( Auth::user() ) or Auth::user()->typeUser==1)
+                                    
+                                        
+                    <form action="{{ route('deletejob', ['idJob' => $job->id]) }}" method="POST">
+                        {{ csrf_field() }}
+                        {{ method_field('DELETE') }}
+                        <button type="submit" class='btn btn-deletepost'>Close</button>
+                    </form>
+                                    
+                @endif
      @endforeach
 <div class="col-md-12"><hr class="style2"></div>
  </div>

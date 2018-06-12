@@ -24,7 +24,7 @@ class CreateUsersTable extends Migration
             $table->string('email', 100);
             $table->string('country')->nullable();
             $table->string('city')->nullable();
-            $table->string('image')->nullable();
+            $table->string('image')->default('Pic1.jpg');
             $table->integer('followers')->default(0);
             $table->integer('follows')->default(0);
             $table->string('description')->nullable();

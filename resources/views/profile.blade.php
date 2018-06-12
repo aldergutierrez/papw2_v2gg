@@ -20,11 +20,12 @@
               <a href="#"><span class="glyphicon glyphicon-option-horizontal" style="color:white" aria-hidden="true"></span></a>
               
               <div class="pictureProfile">
-                <img src="../img/{{ Auth::user()->image }}" class="img-circle" style="height: 180px">
+                <img src="../img/{{ Auth::user()->image }}" class="center-cropped2" style="height: 180px">
               </div>
 
-              <h2>{{ Auth::user()->userName }}</h2>
-              <h4>{{ Auth::user()->email }}</h4>
+              <h2>{{ Auth::user()->name }} {{ Auth::user()->lastName }}</h2>
+              <h4>@ {{ Auth::user()->userName }}</h4>
+              <h4>{{ Auth::user()->country }} {{ Auth::user()->city }}</h4>
               <a class="btn btn-default btn-outline">Follow</a>
               <br>
               <hr class="style1">

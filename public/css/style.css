@@ -388,8 +388,12 @@ a.btn:hover,
 
 #profileNavbar
 {
-width: 36px;
+
 border-radius: 25px;
+width: 38px;
+height: 38px;
+object-fit: cover;
+
 }
 .modal-body div>.form-control{
 background-color: #E2E2E2;
@@ -802,6 +806,15 @@ font-weight: bold;
   border-top-right-radius: 10px;
 }
 
+.center-cropped2
+{
+
+border-radius: 50%!important;
+width: 180px;
+height: 180px;
+object-fit: cover;
+
+}
 a.btn{
   background-color: #424242;
   color: white;
