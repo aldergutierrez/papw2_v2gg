@@ -20,7 +20,7 @@
               <a href="#"><span class="glyphicon glyphicon-option-horizontal" style="color:white" aria-hidden="true"></span></a>
               
               <div class="pictureProfile">
-                <img src="img/{{ Auth::user()->image }}" class="img-circle" style="height: 180px">
+                <img src="../img/{{ Auth::user()->image }}" class="img-circle" style="height: 180px">
               </div>
 
               <h2>{{ Auth::user()->userName }}</h2>
