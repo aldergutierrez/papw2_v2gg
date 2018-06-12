@@ -23,19 +23,23 @@ class busquedaController extends Controller{
     }
 
 
-    public function store(Request $request){    //Se muestran los primeros 10 resultados que coinciden
+    public function store(Request $request){    //Se muestran los primeros 25 resultados que coinciden
         //return "hola";
-        $resultadousers = User::where('userName', $request->buscar)->orWhere('userName', 'like', '%'.$request->buscar.'%')->take(10)->get();
+        $resultadousers = User::where('userName', $request->buscar)->orWhere('userName', 'like', '%'.$request->buscar.'%')->take(25)->get();
        
 
-       $resultadoposts = Posts::where('title', $request->buscar)->orWhere('title', 'like', '%'.$request->buscar.'%')->take(10)->get();
+       $resultadoposts = Posts::where('title', $request->buscar)->orWhere('title', 'like', '%'.$request->buscar.'%')->take(25)->get();
 
-       $resultadopostsXcc = Posts::where('creativeField', $request->buscar)->orWhere('creativeField', 'like', '%'.$request->buscar.'%')->take(10)->get();
+       $resultadopostsFecs = Posts::where('created_at', $request->buscar)->orWhere('created_at', 'like', '%'.$request->buscar.'%')->take(25)->get();
+
+       $resultadopostsXcc = Posts::where('creativeField', $request->buscar)->orWhere('creativeField', 'like', '%'.$request->buscar.'%')->take(25)->get();
        
 
-       $resultadojobs = Jobs::where('creativeField', $request->buscar)->orWhere('creativeField', 'like', '%'.$request->buscar.'%')->take(10)->get();
+       $resultadojobs = Jobs::where('creativeField', $request->buscar)->orWhere('creativeField', 'like', '%'.$request->buscar.'%')->take(25)->get();
 
-       return view('resultados', compact('resultadousers', 'resultadoposts', 'resultadojobs', 'resultadopostsXcc'));
+       $resultadojobsEmps = Jobs::where('employment', $request->buscar)->orWhere('employment', 'like', '%'.$request->buscar.'%')->take(25)->get();
+
+       return view('resultados', compact('resultadousers', 'resultadoposts', 'resultadojobs', 'resultadopostsXcc', 'resultadojobsEmps', 'resultadopostsFecs'));
 
        //return $resultadopost;
     }

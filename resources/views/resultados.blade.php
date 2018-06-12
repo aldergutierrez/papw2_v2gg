@@ -57,6 +57,20 @@
          </div>
           </div>
            @endforeach
+        @foreach ($resultadopostsFecs as $resultadopostsFec)
+          
+          <div class="col-md-2 post">
+
+            <a href="{{ route('post', ['id' => $resultadopostsFec->id]) }}"  id="id-post" class="postimage" value="{{ $resultadopostsFec->id }}"><img class="center-cropped img-responsive"  src="img/{{ $resultadopostsFec->image}}"></a>
+            <p class="noteTitle row">{{ $resultadopostsFec->title }}</p>
+            <p class="noteSub row">{{ $resultadopostsFec->creativeField }}</p>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">{{ $resultadopostsFec->likes }} <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">{{ $resultadopostsFec->views }} <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#">{{ $resultadopostsFec->comments }} <span class=" glyphicon glyphicon-comment"></span></a>
+         </div>
+          </div>
+           @endforeach
     </div>
  </div>
 
@@ -80,6 +94,25 @@
              </div>
                     <div class="col-md-2 TxtHola4">
                     {{ $resultadojob->hours }}
+            </div>
+
+     @endforeach
+
+     @foreach ($resultadojobsEmps as $resultadojobsEmps)
+         <div class="col-md-12"><hr class="style2"></div>
+        </div>
+         <div class="col-md-12">
+             <div class="row col-md-9 TxtHola4">
+                    {{ $resultadojobsEmp->employment }}
+             </div>
+                    <div class="col-md-3 TxtHola4">
+                     {{ $resultadojobsEmp->city }},     {{ $resultadojobsEmp->country }}
+            </div>
+                <div class="row col-md-10">
+                    <a href="" class="TxtHola3"><span>{{ $resultadojobsEmp->description }}</span></a>
+             </div>
+                    <div class="col-md-2 TxtHola4">
+                    {{ $resultadojobsEmp->hours }}
             </div>
 
      @endforeach
