@@ -23,6 +23,12 @@ class createPostController extends Controller
     
       public function show(Posts $idPost)
     {
+
+      /*$data = DB::table('posts')->with(['post' => $idPost])
+    ->join('users', 'users.id', '=', 'posts.idUsers')
+    ->get(array('posts.*', 'users.userName'));*/
+
+
         return view('post')->with(['post' => $idPost]);
     }
 
