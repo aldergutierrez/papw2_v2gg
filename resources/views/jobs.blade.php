@@ -78,7 +78,16 @@
     		<div class="col-md-2 TxtHola4">
      		{{ $job->hours }}
     </div>
-
+  @if($job->wasCreatedBy( Auth::user() ) or Auth::user()->typeUser==1)
+                    
+                        
+                        <form action="{{ route('deletejob', ['idJob' => $job->id]) }}" method="POST">
+                            {{ csrf_field() }}
+                            {{ method_field('DELETE') }}
+                            <button type="submit" class='btn btn-deletepost'>Close</button>
+                        </form>
+                    
+                    @endif
      @endforeach
 <div class="col-md-12"><hr class="style2"></div>
  </div>

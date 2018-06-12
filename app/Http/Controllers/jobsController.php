@@ -28,4 +28,15 @@ class jobsController extends Controller
 
     }
 
+         public function delete(Jobs $idJob)
+    {
+        if($idJob->idUsers != \Auth::user()->id) {
+            return redirect()->route('jobs');
+        }
+         $job=Jobs::find($idJob);
+        $idJob->delete();
+        session()->flash('message', 'Job Deleted!');
+        return redirect()->route('jobs');
+    }
+
 }

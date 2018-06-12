@@ -83,7 +83,8 @@ Route::name('deletepost')->delete('/post/{idPost}', 'createPostController@delete
 
  Route::get('/jobs', 'jobsController@index')->name('jobs');
 Route::name('newJob')->post('/newJob', 'jobsController@store');
-
+Route::name('deletejob')->delete('/jobs/{idJob}', 'jobsController@delete');
+Route::name('updatejob')->put('/jobs/{idJob}', 'jobsController@update');
 
 //Route::name('search')->post('/search', 'busquedaController@store');
 //Route::resource('/search', 'busquedaController');
