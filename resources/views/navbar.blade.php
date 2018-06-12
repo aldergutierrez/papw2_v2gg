@@ -26,7 +26,7 @@
  <form id="formSearch" method="post" action="/search" class="navbar-form navbar-right " role="search">
         <div class="form-group">
           {{ csrf_field() }}
-        <input name="buscar" type="text" id="sss" style=" width: 0px">
+        <input name="buscar" placeholder="Search Jobs, Users, Posts" type="text" id="sss" style=" width: 0px">
         <button class="btn btn-primary" id="btnSearch" type="button"><span class="glyphicon glyphicon-search" style="font-style: 50px;"></span></button>
    </form>
 

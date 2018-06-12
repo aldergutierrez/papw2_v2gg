@@ -29,11 +29,13 @@ class busquedaController extends Controller{
        
 
        $resultadoposts = Posts::where('title', $request->buscar)->orWhere('title', 'like', '%'.$request->buscar.'%')->take(10)->get();
+
+       $resultadopostsXcc = Posts::where('creativeField', $request->buscar)->orWhere('creativeField', 'like', '%'.$request->buscar.'%')->take(10)->get();
        
 
        $resultadojobs = Jobs::where('creativeField', $request->buscar)->orWhere('creativeField', 'like', '%'.$request->buscar.'%')->take(10)->get();
 
-       return view('resultados', compact('resultadousers', 'resultadoposts', 'resultadojobs'));
+       return view('resultados', compact('resultadousers', 'resultadoposts', 'resultadojobs', 'resultadopostsXcc'));
 
        //return $resultadopost;
     }
