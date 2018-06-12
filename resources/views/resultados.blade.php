@@ -43,6 +43,20 @@
          </div>
           </div>
            @endforeach
+        @foreach ($resultadopostsXcc as $resultadopostXcc)
+          
+          <div class="col-md-2 post">
+
+            <a href="{{ route('post', ['id' => $resultadopostXcc->id]) }}"  id="id-post" class="postimage" value="{{ $resultadopostXcc->id }}"><img class="center-cropped img-responsive"  src="img/{{ $resultadopostXcc->image}}"></a>
+            <p class="noteTitle row">{{ $resultadopostXcc->title }}</p>
+            <p class="noteSub row">{{ $resultadopostXcc->creativeField }}</p>
+            <div class="interaction btn-group center-block row ">
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">{{ $resultadopostXcc->likes }} <span class="glyphicon glyphicon-heart"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#" style="background-color: #424242">{{ $resultadopostXcc->views }} <span class="glyphicon glyphicon-eye-open"></span></a>
+           <a class="btn btn-secondary col-md-4" href="#">{{ $resultadopostXcc->comments }} <span class=" glyphicon glyphicon-comment"></span></a>
+         </div>
+          </div>
+           @endforeach
     </div>
  </div>
 
