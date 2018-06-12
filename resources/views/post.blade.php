@@ -46,11 +46,12 @@
 
               <div class="btn btn-like">Like project</div>
 
-              <div class="date">Comments(20)</div>
+              <div class="date">Comments({{ $commentscounts}})</div>
+           
               @foreach ($comments as $comment)
               <div class="comments">
                 <img class="img-comment" src="../img/{{ $comment->image}}">
-                <div class="txt-date">12:34am</div>
+                <div class="txt-date">{{ $comment->created_at}}</div>
                 <div class="comment">
                   <div class="txt-name">{{ $comment->userName}}</div>
                   <div class="txt-comm">{{ $comment->comment}}</div>

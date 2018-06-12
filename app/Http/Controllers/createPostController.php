@@ -30,9 +30,11 @@ class createPostController extends Controller
 
       $users = DB::table('users')->select('users.id', 'users.userName', 'users.image')->leftJoin('posts', 'posts.idUsers', '=', 'users.id')->where('users.id', $idPost->idUsers)->get();
 
-      $comments = DB::table('comments')->select('users.image', 'users.userName', 'comments.comment')->leftJoin('users', 'users.id', '=', 'comments.idUser')->where('comments.idPost', $idPost->id)->get();
+      $comments = DB::table('comments')->select('users.image', 'users.userName', 'comments.comment', 'comments.created_at')->leftJoin('users', 'users.id', '=', 'comments.idUser')->where('comments.idPost', $idPost->id)->get();
 
-        return view('post', compact('posts', 'users', 'comments', 'idPost'));
+      $commentscounts =  Comment::where('idPost', '=',  $idPost->id)->count();
+
+        return view('post', compact('posts', 'users', 'comments', 'idPost', 'commentscounts'));
          
     }
 
