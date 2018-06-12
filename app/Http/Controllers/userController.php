@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Posts;
 use Illuminate\Http\Request;
-use App\Http\Requests\CreatePostRequest;
-use App\Http\Requests\UpdatePostRequest;
+use App\Http\Requests\UpdateUser;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Auth;
 
@@ -49,13 +49,15 @@ class userController extends Controller
         return view('/editProfile', compact('user'));
     }
 
-       public function update(User $user)
+       public function update(User $user,  UpdateUser $request)
     { 
-       
 
-        $user->update();
+      $user = Auth::user();
 
-        return back();
+          $user->update(
+           $request->only('userName' ,'name', 'lastName', 'country','city','image', 'description'));
+
+               return redirect()->route('profile');
     }
 
      public function delete(Posts $idPost)
