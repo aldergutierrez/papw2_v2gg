@@ -64,4 +64,19 @@ class userController extends Controller
     {
         
     }
+
+    public function createComment(Request $request){
+        $comment = e($request->comment);
+        //$date = date('');
+        //$time = date('H:m:s');
+
+        Comments::insert([
+            'comment' => $comment,
+            'idUser' => Auth::user()->id,
+            'idPost' => Auth::Posts()->id,
+            //'created_at' => $date,
+            //'time' => $time,
+        ]);
+        return redirect('/post/{idPost}')->with('status', 'Enhorabuena comentario publicado con éxito');
+    }
 }

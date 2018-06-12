@@ -37,4 +37,8 @@ class User extends Authenticatable
 
         return $this->hasMany(Jobs::class);
     }
+
+    public function comments() {
+        return $this->hasMany('App\Comments');
+    }
 }
