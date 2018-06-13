@@ -98,7 +98,7 @@
 
      @endforeach
 
-     @foreach ($resultadojobsEmps as $resultadojobsEmps)
+     @foreach ($resultadojobsEmps as $resultadojobsEmp)
          <div class="col-md-12"><hr class="style2"></div>
         </div>
          <div class="col-md-12">

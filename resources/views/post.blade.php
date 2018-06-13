@@ -51,7 +51,7 @@
               @foreach ($comments as $comment)
               <div class="comments">
                 <img class="img-comment" src="../img/{{ $comment->image}}">
-                <div class="txt-date">{{ $comment->created_at->diffForHumans() }}</div>
+                <div class="txt-date">{{ $comment->created_at }}</div>
                 <div class="comment">
                   <div class="txt-name">{{ $comment->userName}}</div>
                   <div class="txt-comm">{{ $comment->comment}}</div>
@@ -97,7 +97,7 @@
 @if($idPost->wasCreatedBy( Auth::user() ) or Auth::user()->typeUser==1)
                     
                          <button class="btn btn-editpost" id="btnEditar" type="button" data-toggle="modal" data-target="#myModal">Edit</button>
-                        <form action="{{ route('deletepost', ['name' => Auth::user()->id]) }}" method="POST">
+                        <form action="{{ route('deletepost', ['idPost' => $post->id]) }}" method="POST">
                             {{ csrf_field() }}
                             {{ method_field('DELETE') }}
                             <button type="submit" class='btn btn-deletepost'>Delete</button>
